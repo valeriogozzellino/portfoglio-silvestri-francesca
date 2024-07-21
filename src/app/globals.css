@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    cursor: none;
+  }
+
+  .flare {
+    position: fixed;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 999999 !important ;
+    backdrop-filter: blur(1px);
+    background-color: #0000005e;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+    cursor: none !important; /* Let's hide the default cursor so it looks way better */
+  }
+  .dark .flare {
+    border: 2px solid #ffff;
+  }
+
+  .light .flare {
+    border: 2px solid #0000;
+  }
+
+  /* We need to remove this custom cursor in mobile devices */
+  @media screen and (max-width: 768px) {
+    .flare {
+      width: 0;
+      height: 0;
+      transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+        opacity 0.2s ease-in-out;
+    }
+  }
+  .flare.pointer {
+    opacity: 0 !important;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+  }
+}
+
+.rotate-2 {
+  transform: rotate(6deg);
+}
+.rotate-4 {
+  transform: rotate(12deg);
+}
+
+.landing-card-slide {
+  z-index: -3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.image-container {
+  overflow: hidden;
+  display: block;
+  transition: transform 300ms ease;
+}
+
+.image-container:hover {
+  transform: translateY(-5px);
+}
