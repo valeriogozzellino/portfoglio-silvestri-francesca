@@ -1,6 +1,7 @@
 import VideoPlayer from "@/components/VideoPlayer";
 import { projects } from "@/utils/projects_music";
 import { imgProjects } from "@/utils/img_projects";
+import Image from "next/image";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
 import "../../globals.css";
 const Project = ({ params }) => {
@@ -40,7 +41,13 @@ const Project = ({ params }) => {
       <div className="mt-6 mb-5 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-center">
         {imgsProject.map((img, index) => (
           <div className="p-1 image-container" key={index}>
-            <img src={img.url} alt={img.alt} className="w-full h-auto" />
+            <Image
+              src={img.url}
+              alt={img.alt}
+              width={300} // Aggiungi una larghezza appropriata
+              height={200} // Aggiungi un'altezza appropriata
+              className="ml-11 rounded-lg lg:ml-9"
+            />
           </div>
         ))}
       </div>
