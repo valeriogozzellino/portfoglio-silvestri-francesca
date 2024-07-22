@@ -3,10 +3,10 @@
 import Image from "next/image";
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import crow from "./crow.webp";
-import imgProfile from "./imgProfile.webp";
+import imgProfile2 from "./imgProfile2.jpg";
 import { motion } from "framer-motion";
 import LoadingOverlay from "@/components/LoadingOverlay";
+
 const Contacts = () => {
   const [formData, setFormData] = useState({
     nome: "",
@@ -62,15 +62,9 @@ const Contacts = () => {
   };
 
   return (
-    <div className="flex md:flex-row flex-col md:justify-between gap-6 pb-24 h-full relative">
-      <LoadingOverlay isLoading={isLoading} />
-      <Image
-        alt=""
-        src={imgProfile}
-        className="w-[100%] max-w-[500px] max-h-[300px] md:max-h-[600px] rounded-lg self-center"
-      />
-
-      <div className="flex flex-col justify-between w-full">
+    <div className="relative h-screen overflow-hidden">
+      <div className="absolute inset-0 z-10 flex flex-col justify-between p-6 bg-opacity-75 bg-gray-900 text-white">
+        <LoadingOverlay isLoading={isLoading} />
         <div className="flex flex-col gap-2 text-lg text-end font-medium">
           <motion.a
             whileHover={{ scale: 1.1 }}
@@ -97,13 +91,12 @@ const Contacts = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 self-center md:w-2/3 pt-6 mb-8">
+          className="flex flex-col gap-4 self-center fixed md:w-2/3 pt-6 mt-28">
           <div className="flex flex-row w-full gap-6">
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="nome">NOME</label>
               <input
-                className="bg-black text-white rounded-lg border-2 border-gray-800
-              w-full p-2"
+                className="bg-black text-white rounded-lg border-2 border-gray-800 w-full p-2"
                 name="nome"
                 type="text"
                 value={formData.nome}
@@ -115,8 +108,7 @@ const Contacts = () => {
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="email">EMAIL</label>
               <input
-                className="bg-black text-white rounded-lg border-2 border-gray-800
-              w-full p-2"
+                className="bg-black text-white rounded-lg border-2 border-gray-800 w-full p-2"
                 name="email"
                 type="email"
                 value={formData.email}
@@ -135,7 +127,7 @@ const Contacts = () => {
               value={formData.contenuto}
               onChange={handleChange}
               required
-              rows="5" // Puoi aumentare il numero di righe iniziali se necessario
+              rows="5"
               style={{ resize: "none", overflow: "auto" }}
             />
           </div>
@@ -143,19 +135,25 @@ const Contacts = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="border w-max  self-start rounded-lg px-8 py-2 hover:bg-white hover:text-black transition-colors duration-400"
+            className="border w-max self-start rounded-lg px-8 py-2 hover:bg-white hover:text-black transition-colors duration-400"
             type="submit">
             {isLoading ? "INVIO..." : "INVIA"}
           </motion.button>
         </form>
 
-        <h1 className="self-end md:relative text-5xl bottom-5 fixed">
-          CONTATTI
-        </h1>
+        <h1 className="self-end text-5xl fixed bottom-5">CONTATTI</h1>
       </div>
 
+      <Image
+        alt=""
+        src={imgProfile2}
+        layout="fill"
+        objectFit="cover"
+        className="z-0 rounded-xl"
+      />
+
       {success && (
-        <div className="absolute top-0 left-0 right-0 bg-green-500 text-white text-center p-4 rounded-b-lg">
+        <div className="absolute top-0 left-0 right-0 z-20 bg-green-500 text-white text-center p-4 rounded-b-lg">
           Email inviata con successo!
         </div>
       )}
