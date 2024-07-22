@@ -91,7 +91,7 @@ const Contacts = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 self-center fixed w-11/12 md:w-2/3 pt-6 mt-28">
+          className="flex flex-col gap-4 self-center fixed w-9/12 md:w-2/3 pt-6 mt-32">
           <div className="flex flex-row w-full gap-6">
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="nome">NOME</label>
@@ -140,7 +140,7 @@ const Contacts = () => {
           </motion.button>
         </form>
 
-        <h1 className="self-end text-5xl fixed bottom-5">CONTATTI</h1>
+        <h1 className="self-end text-5xl bottom-5">CONTATTI</h1>
       </div>
 
       <Image
