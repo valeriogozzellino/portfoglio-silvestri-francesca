@@ -3,8 +3,18 @@
 import CardsCarousel from "@/components/Carousels/CardsCarousel";
 import LandingCarousel from "@/components/Carousels/LandingCarousel";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
-
+import { useEffect } from "react";
 export default function Home() {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.scrollTo({
+        top: 500,
+        behavior: "smooth",
+      });
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="flex flex-col justify-center w-full gap-16">
       <div className="relative h-[55vh] md:h-[70vh]">
@@ -12,7 +22,7 @@ export default function Home() {
         <div className="flex flex-col justify-end h-full text-4xl md:text-6xl lg:text-8xl md:px-[10%]">
           <h1 className="self-start">
             <TextGenerateEffect
-              words={"CIAO, SONO"}
+              words={"DIRECTED BY"}
               duration={1.5}
               startDelay={0}
               staggerDuration={1}
@@ -42,7 +52,7 @@ export default function Home() {
         {/* Image Stack */}
         <CardsCarousel />
       </div>
-      <div className="flex w-full items-center flex-col">
+      {/* <div className="flex w-full items-center flex-col">
         <TextGenerateEffect
           duration={0.5}
           words={"BREVE DESCRIZIONE DEL MIO LAVORO"}
@@ -61,7 +71,7 @@ export default function Home() {
             className="text-center mb-10 text-slate-200 w-full"
           />
         </div>
-      </div>
+      </div> */}
 
       {/* <HorizontalCarousel /> */}
       <div className="w-full text-2xl md:text-xl lg:text-6xl md:px-[10%]">
