@@ -2,7 +2,7 @@ export const projectsFashion = [
   {
     id: 1,
     type: "local",
-    url: "/videos/Mulaclogonero1.mp4",
+    url: "/images/STUPIDOAMORE.jpg",
     title: "Mulac & Moschino",
     description: "Mulac e Moschino",
     detailedDescription:
@@ -11,16 +11,7 @@ export const projectsFashion = [
   {
     id: 2,
     type: "local",
-    url: "/videos/MaxeCo.mov",
-    title: "Max&Co",
-    description: "Max&Co spot pubblicitario",
-    detailedDescription:
-      "Questo spot pubblicitario per Max&Co è stato progettato per riflettere la freschezza e l'eleganza del brand. Utilizzando una narrazione visiva che cattura l'essenza della collezione primavera/estate, il video mette in risalto i tessuti leggeri e i motivi vivaci che caratterizzano i capi. La campagna pubblicitaria mira a connettere emotivamente il pubblico con l'immagine di una donna moderna, indipendente e stilosa, proprio come la clientela di Max&Co.",
-  },
-  {
-    id: 3,
-    type: "local",
-    url: "/videos/MULAC-Maleducata.mp4",
+    url: "/images/MULAC.png",
     title: "Mulac",
     description: "Mulac maleducata",
     detailedDescription:

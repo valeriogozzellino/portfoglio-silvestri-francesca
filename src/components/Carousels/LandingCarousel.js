@@ -1,32 +1,26 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
-
-// Import components
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
-// Import required modules
 import {
   Navigation as SwiperNavigation,
   Keyboard,
   Mousewheel,
   Zoom,
 } from "swiper/modules";
-
 import { projects } from "@/utils/projects_music";
 import { projectsFashion } from "@/utils/projects_fashion";
 import Navigation from "./Navigation";
 import Link from "next/link";
+
 const YouTubePlayer = dynamic(() => import("react-player/youtube"), {
   ssr: false,
 });
 
 const LandingCarousel = ({ dataType }) => {
-  // select the type of data
   let dataProjects;
   if (dataType == 0) {
     dataProjects = projects;
@@ -38,11 +32,10 @@ const LandingCarousel = ({ dataType }) => {
     setActiveSlide(swiper.realIndex);
   };
 
-  // This function calculates the scale of each slide based on its distance from the active slide
   const calculateScale = (index) => {
     const distance = Math.abs(index - activeSlide);
-    const scaleFactor = 0.15; // Decrease scale by 10% per slide away from the active slide
-    const minScale = 0.5; // The smallest scale for the furthest slides
+    const scaleFactor = 0.15;
+    const minScale = 0.85;
     const scale = Math.max(1 - distance * scaleFactor, minScale);
     return scale;
   };
@@ -73,47 +66,57 @@ const LandingCarousel = ({ dataType }) => {
         {dataProjects.map((project, index) => (
           <SwiperSlide key={project.id}>
             <motion.div
-              initial={{ scale: 0.7 }}
+              initial={{ scale: 0.85 }}
               animate={{
                 scale: activeSlide === index ? 1 : calculateScale(index),
               }}
               transition={{ duration: 0.3 }}
-              className="h-fit w-full ">
+              className="flex flex-col items-center h-fit w-full p-4">
               {project?.type == "youtube" && (
                 <YouTubePlayer
                   url={project.url}
-                  style={{
-                    maxWidth: "-webkit-fill-available",
-                  }}
+                  width="600px"
+                  height="400px"
+                  className="max-w-full max-h-full object-cover"
                 />
               )}
               <Link href={`/project/${project.id}`}>
                 {project.type === "local" && (
-                  <video
-                    src={project.url}
-                    controls
-                    style={{ width: 600, height: 400 }}
-                  />
+                  <div className="relative group">
+                    <Image
+                      src={project.url}
+                      alt={project.title}
+                      width={700}
+                      height={500}
+                      className="max-w-full max-h-full object-cover group-hover:opacity-50 transition-opacity duration-300"
+                    />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
+                      <span className="text-white text-lg font-bold">
+                        {project.title}
+                      </span>
+                      <p>
+                        <b>clicca</b> per scoprire di più
+                      </p>
+                    </div>
+                  </div>
                 )}
               </Link>
             </motion.div>
 
             <motion.div
-              initial={{ scale: 0.7 }}
-              animate={{ scale: activeSlide === index ? 1 : 0.7 }}
+              initial={{ scale: 0.85 }}
+              animate={{ scale: activeSlide === index ? 1 : 0.85 }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col text-center pt-4">
+              className="text-center pt-4">
               <h1 className="font-semibold">{project.description}</h1>
             </motion.div>
           </SwiperSlide>
         ))}
-
         <Navigation />
       </Swiper>
 
       <div className="relative flex flex-row justify-between w-full font-bold text-4xl md:text-6xl lg:text-8xl">
         <h1>#{dataProjects[activeSlide].id}</h1>
-
         <h1>{dataProjects[activeSlide].title}</h1>
       </div>
     </div>

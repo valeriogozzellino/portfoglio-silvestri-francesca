@@ -20,16 +20,16 @@ export const projects = [
   {
     id: 3,
     type: "local",
-    url: "/videos/Marracash_Annuncio.mp4",
-    title: "MARRACASH",
-    description: "MARRACASH NEGLI STADI",
+    url: "/images/MARRAGEDDON.jpg",
+    title: "MARRACASH - GUE",
+    description: "MARRAGHEDDON",
     detailedDescription:
       "In questo affascinante progetto di videomaking, ho avuto l'opportunità di collaborare con Marracash, una delle icone più influenti della scena rap italiana. Attraverso una narrazione visiva coinvolgente, il video mette in luce la profondità dei testi di Marracash e la sua intensa espressività. L'atmosfera del set era carica di tensione creativa, con illuminazioni dinamiche che riflettevano le tematiche oscure e riflessive delle sue canzoni. Questo lavoro si propone di esplorare non solo la musica, ma anche il contesto emotivo e sociale che Marracash trasmette attraverso le sue parole, offrendo agli spettatori una prospettiva più intima e personale.",
   },
   {
     id: 4,
     type: "local",
-    url: "/videos/MERCH_EXP_MERCH_2.mov",
+    url: "/images/MECNA.jpeg",
     title: "MECNA",
     description: "MERCANDISING di MECNA ",
     detailedDescription:
@@ -38,7 +38,7 @@ export const projects = [
   {
     id: 5,
     type: "local",
-    url: "/videos/pinguini.mp4",
+    url: "/images/PINGUINI.jpeg",
     title: "PINGUINI",
     description: "PINGUINI TATTICI NUCLEARI (aftermovie)",
     detailedDescription:
@@ -47,7 +47,7 @@ export const projects = [
   {
     id: 6,
     type: "local",
-    url: "/videos/fibra.mov",
+    url: "/images/FABRIFIBRA.jpg",
     title: "FABRI FIBRA",
     description: "FABRI FIBRA a Pescara (aftermovie)",
     detailedDescription:
@@ -56,7 +56,7 @@ export const projects = [
   {
     id: 7,
     type: "local",
-    url: "/videos/Madame_V5_Roma.mov",
+    url: "/images/MADAME.jpg",
     title: "MADAME",
     description: "MADAME",
     detailedDescription:
@@ -65,9 +65,27 @@ export const projects = [
   {
     id: 8,
     type: "local",
-    url: "/videos/fulminacci.mp4",
+    url: "/images/FULMINACCI.png",
     title: "FULMINACCI",
     description: "FULMINACCI (AFTERMOVIE)",
+    detailedDescription:
+      "Il progetto videomaking per Fulminacci cattura l'energia e l'emozione del suo concerto. Utilizzando tecniche di ripresa dinamiche e un montaggio incisivo, il video trascina lo spettatore in una performance indimenticabile. Il focus è sulla connessione tra Fulminacci e il suo pubblico, esaltando i momenti di interazione e la potente espressività delle sue canzoni, tutto avvolto in un'atmosfera visiva che amplifica l'esperienza del live.",
+  },
+  {
+    id: 9,
+    type: "local",
+    url: "/images/ANGELINAMANGO.jpg",
+    title: "ANGELINA MANGO",
+    description: "ANGELINA MANGO (TikTok)",
+    detailedDescription:
+      "Il progetto videomaking per Fulminacci cattura l'energia e l'emozione del suo concerto. Utilizzando tecniche di ripresa dinamiche e un montaggio incisivo, il video trascina lo spettatore in una performance indimenticabile. Il focus è sulla connessione tra Fulminacci e il suo pubblico, esaltando i momenti di interazione e la potente espressività delle sue canzoni, tutto avvolto in un'atmosfera visiva che amplifica l'esperienza del live.",
+  },
+  {
+    id: 10,
+    type: "local",
+    url: "/images/CALCUTTA.jpg",
+    title: "CALCUTTA",
+    description: "CALCUTTA (AFTERMOVIE)",
     detailedDescription:
       "Il progetto videomaking per Fulminacci cattura l'energia e l'emozione del suo concerto. Utilizzando tecniche di ripresa dinamiche e un montaggio incisivo, il video trascina lo spettatore in una performance indimenticabile. Il focus è sulla connessione tra Fulminacci e il suo pubblico, esaltando i momenti di interazione e la potente espressività delle sue canzoni, tutto avvolto in un'atmosfera visiva che amplifica l'esperienza del live.",
   },
