@@ -1,22 +1,22 @@
 export const cards = [
   {
     id: 1,
-    src: 'https://placehold.co/300x500/purple/purple',
-    description: 'A street photography image featuring urban scenes',
+    src: "/images/IMG_0185.jpg",
+    description: "A street photography image featuring urban scenes",
   },
   {
     id: 2,
-    src: 'https://placehold.co/300x500/green/green',
-    description: 'A street photography image featuring urban scenes',
+    src: "/images/marracash2.png",
+    description: "A street photography image featuring urban scenes",
   },
   {
     id: 3,
-    src: 'https://placehold.co/300x500/orange/orange',
-    description: 'A street photography image featuring urban scenes',
+    src: "/images/fulminacci4.png",
+    description: "A street photography image featuring urban scenes",
   },
   {
     id: 4,
-    src: 'https://placehold.co/300x500/blue/blue',
-    description: 'A street photography image featuring urban scenes',
+    src: "/images/madame3.png",
+    description: "A street photography image featuring urban scenes",
   },
-]
+];

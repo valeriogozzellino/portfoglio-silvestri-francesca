@@ -30,7 +30,7 @@ const Project = ({ params }) => {
       <div className="mt-6 w-4/5 text-xl md:text-xl lg:text-2xl md:px-[10%]">
         <h5 className="self-center">
           <TextGenerateEffect
-            words="Scopri l'essenza di 'Progetto X', un viaggio esclusivo attraverso la musica e le emozioni. Questo videoclip offre uno sguardo intimo sugli artisti che stanno ridefinendo il panorama musicale. Unendo talento puro e passioni autentiche, 'Progetto X' rappresenta un ponte tra culture e generazioni. Ogni nota, ogni battito, e ogni scena è curata con precisione per trasmettere un'esperienza audiovisiva unica."
+            words={project.detailedDescription}
             duration={1.5}
             startDelay={1.5}
             staggerDuration={0}

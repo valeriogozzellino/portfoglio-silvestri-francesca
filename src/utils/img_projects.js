@@ -47,4 +47,29 @@ export const imgProjects = [
     url: "/images/marracash2.png",
     alt: "Marracash",
   },
+
+  {
+    id: 8,
+    idProject: 8,
+    url: "/images/fulminacci1.png",
+    alt: "Fulminacci",
+  },
+  {
+    id: 9,
+    idProject: 8,
+    url: "/images/fulminacci2.png",
+    alt: "Fulminacci",
+  },
+  {
+    id: 10,
+    idProject: 8,
+    url: "/images/fulminacci3.png",
+    alt: "Fulminacci",
+  },
+  {
+    id: 11,
+    idProject: 8,
+    url: "/images/fulminacci4.png",
+    alt: "Fulminacci",
+  },
 ];
