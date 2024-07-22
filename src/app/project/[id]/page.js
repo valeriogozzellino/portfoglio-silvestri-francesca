@@ -3,7 +3,7 @@ import { imgProjects } from "@/utils/img_projects";
 import Image from "next/image";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
 import "../../globals.css";
-import YouTubePlayer from "@/components/YoutubePlayer";
+import YouTubePlayer from "@/components/YouTubePlayer";
 
 const Project = ({ params }) => {
   const project = projects.find((p) => p.id == params.id);
