@@ -52,29 +52,9 @@ export default function Home() {
         {/* Image Stack */}
         <CardsCarousel />
       </div>
-      {/* <div className="flex w-full items-center flex-col">
-        <TextGenerateEffect
-          duration={0.5}
-          words={"BREVE DESCRIZIONE DEL MIO LAVORO"}
-          startDelay={2}
-          staggerDuration={0.5}
-          className="text-center mb-4 mt-10 text-xl md:text-2xl lg:text-4xl "
-        />
-        <div className="w-full md:w-full lg:w-1/2">
-          <TextGenerateEffect
-            duration={0.5}
-            words={
-              "Sono un videomaker professionista specializzato nella creazione di video musicali e spot pubblicitari di moda. Con un livello di competenza avanzato, ho lavorato su numerosi progetti di alto profilo, catturando l'essenza di concerti ed eventi per immortalare i momenti più emozionanti. Il mio obiettivo è permettere alle persone di rivivere queste esperienze uniche o di scoprirle per la prima volta attraverso i miei video."
-            }
-            startDelay={4}
-            staggerDuration={0}
-            className="text-center mb-10 text-slate-200 w-full"
-          />
-        </div>
-      </div> */}
 
       {/* <HorizontalCarousel /> */}
-      <div className="w-full text-2xl md:text-xl lg:text-6xl md:px-[10%]">
+      <div className="w-full  mt-10 text-2xl md:text-xl lg:text-6xl md:px-[10%]">
         <h3 className="self-center">
           <TextGenerateEffect
             words={"VIDEO MUSICALI"}

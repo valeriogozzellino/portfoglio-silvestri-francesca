@@ -71,7 +71,7 @@ const LandingCarousel = ({ dataType }) => {
                 scale: activeSlide === index ? 1 : calculateScale(index),
               }}
               transition={{ duration: 0.3 }}
-              className="flex flex-col items-center h-fit w-full p-4">
+              className="flex flex-col items-center h-fit w-full p-2">
               {project?.type == "youtube" && (
                 <YouTubePlayer
                   url={project.url}
