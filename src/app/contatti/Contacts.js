@@ -91,12 +91,12 @@ const Contacts = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 self-center fixed md:w-2/3 pt-6 mt-28">
+          className="flex flex-col gap-4 self-center fixed w-11/12 md:w-2/3 pt-6 mt-28">
           <div className="flex flex-row w-full gap-6">
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="nome">NOME</label>
               <input
-                className="bg-black text-white rounded-lg border-2 border-gray-800 w-full p-2"
+                className="bg-[#182236] bg-opacity-75 rounded-lg border-2 border-gray-700 w-full p-2"
                 name="nome"
                 type="text"
                 value={formData.nome}
@@ -108,7 +108,7 @@ const Contacts = () => {
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="email">EMAIL</label>
               <input
-                className="bg-black text-white rounded-lg border-2 border-gray-800 w-full p-2"
+                className="bg-[#182236] bg-opacity-75 rounded-lg border-2 border-gray-700 w-full p-2"
                 name="email"
                 type="email"
                 value={formData.email}
@@ -119,9 +119,8 @@ const Contacts = () => {
           </div>
 
           <div className="flex flex-col text-center gap-2">
-            <label htmlFor="contenuto">MESSAGGIO</label>
             <textarea
-              className="bg-black text-white rounded-lg border-2 border-gray-800 w-full p-2"
+              className="bg-[#182236] bg-opacity-75 text-white rounded-lg border-2 border-gray-700 w-full p-2"
               name="contenuto"
               placeholder="COME POSSO AIUTARTI?"
               value={formData.contenuto}
