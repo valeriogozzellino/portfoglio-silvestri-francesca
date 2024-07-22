@@ -97,7 +97,7 @@ const Contacts = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 self-center md:w-2/3 pt-6">
+          className="flex flex-col gap-4 self-center md:w-2/3 pt-6 mb-8">
           <div className="flex flex-row w-full gap-6">
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="nome">NOME</label>
@@ -143,7 +143,7 @@ const Contacts = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="border w-max self-start rounded-lg px-8 py-2 hover:bg-white hover:text-black transition-colors duration-400"
+            className="border w-max  self-start rounded-lg px-8 py-2 hover:bg-white hover:text-black transition-colors duration-400"
             type="submit">
             {isLoading ? "INVIO..." : "INVIA"}
           </motion.button>
