@@ -64,36 +64,28 @@ const Contacts = () => {
   };
 
   useEffect(() => {
-    let lastScrollY = window.scrollY;
-
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
-        setScrollDirection("down");
-      } else {
-        setScrollDirection("up");
-      }
-      setScrollY(currentScrollY);
-      lastScrollY = currentScrollY;
+      setScrollY(window.scrollY);
+      setScrollDirection(
+        window.scrollY > scrollY ? "down" : window.scrollY < scrollY ? "up" : ""
+      );
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [scrollY]);
 
   return (
     <div className="relative h-screen flex flex-col md:flex-row overflow-hidden">
       <LoadingOverlay isLoading={isLoading} />
 
-      <div
-        className={`relative flex-1 h-3/4 md:h-full transition-opacity duration-500 ${
-          scrollDirection === "down" && scrollY > 100
-            ? "opacity-0 md:opacity-100"
-            : "opacity-100"
-        }`}>
+      <motion.div
+        initial={{ opacity: 1 }}
+        animate={{
+          opacity: scrollDirection === "down" && scrollY > 100 ? 0 : 1,
+        }}
+        transition={{ duration: 0.5 }}
+        className="relative flex-1 h-3/4 md:h-full">
         <Image
           alt=""
           src={imgProfile2}
@@ -101,14 +93,13 @@ const Contacts = () => {
           objectFit="cover"
           className="z-0"
         />
-      </div>
+      </motion.div>
 
-      <div
-        className={`relative z-10 flex flex-col justify-center items-center p-6 bg-opacity-75 bg-gray-900 text-white md:bg-transparent md:w-1/2 ${
-          scrollDirection === "down" && scrollY > 100
-            ? "fixed top-0 left-0 w-full h-full"
-            : ""
-        }`}>
+      <motion.div
+        initial={{ y: 0 }}
+        animate={{ y: scrollDirection === "down" && scrollY > 100 ? -100 : 0 }}
+        transition={{ duration: 0.5 }}
+        className="relative z-10 flex flex-col justify-center items-center p-6 bg-opacity-75 bg-gray-900 text-white md:bg-transparent md:w-1/2">
         <form
           onSubmit={handleSubmit}
           className="flex flex-col gap-4 w-full max-w-md">
@@ -161,7 +152,7 @@ const Contacts = () => {
         </form>
 
         <h1 className="self-end text-5xl mt-8">CONTATTI</h1>
-      </div>
+      </motion.div>
 
       {success && (
         <div className="absolute top-0 left-0 right-0 z-20 bg-green-500 text-white text-center p-4 rounded-b-lg">
