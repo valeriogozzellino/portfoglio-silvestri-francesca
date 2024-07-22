@@ -2,7 +2,8 @@ export const projects = [
   {
     id: 1,
     type: "youtube",
-    url: "https://www.youtube.com/watch?v=-w9hTgFkVG0",
+    videoUrl: "https://www.youtube.com/watch?v=-w9hTgFkVG0",
+    url: "/images/anna.png",
     title: "ANNA PEPE",
     description: "Vieni dalla baddie - ANNA PEPE (VIDEOCLIP)",
     detailedDescription:
@@ -11,7 +12,8 @@ export const projects = [
   {
     id: 2,
     type: "youtube",
-    url: "https://www.youtube.com/watch?v=vK9ybpAcPgo",
+    videoUrl: "https://www.youtube.com/watch?v=vK9ybpAcPgo",
+    url: "/images/MECNA.jpeg",
     title: "MECNA",
     description: "07:34 - MECNA (VIDEOCLIP)",
     detailedDescription:
@@ -20,6 +22,7 @@ export const projects = [
   {
     id: 3,
     type: "local",
+    videoUrl: "/videos/Marracash_Annuncio.mp4",
     url: "/images/MARRAGEDDON.jpg",
     title: "MARRACASH - GUE",
     description: "MARRAGHEDDON",
@@ -29,7 +32,8 @@ export const projects = [
   {
     id: 4,
     type: "local",
-    url: "/images/MECNA.jpeg",
+    videoUrl: "/videos/MERCH_EXP_MERCH_2.mp4",
+    url: "/images/merchMecna.png",
     title: "MECNA",
     description: "MERCANDISING di MECNA ",
     detailedDescription:
@@ -38,6 +42,7 @@ export const projects = [
   {
     id: 5,
     type: "local",
+    videoUrl: "/videos/pinguini.mp4",
     url: "/images/PINGUINI.jpeg",
     title: "PINGUINI",
     description: "PINGUINI TATTICI NUCLEARI (aftermovie)",
@@ -47,6 +52,7 @@ export const projects = [
   {
     id: 6,
     type: "local",
+    videoUrl: "/videos/fibra.mov",
     url: "/images/FABRIFIBRA.jpg",
     title: "FABRI FIBRA",
     description: "FABRI FIBRA a Pescara (aftermovie)",
@@ -56,6 +62,7 @@ export const projects = [
   {
     id: 7,
     type: "local",
+    videoUrl: "/videos/madame_V5_Roma.mp4",
     url: "/images/MADAME.jpg",
     title: "MADAME",
     description: "MADAME",
@@ -65,6 +72,7 @@ export const projects = [
   {
     id: 8,
     type: "local",
+    videoUrl: "/videos/fulminacci.mp4",
     url: "/images/FULMINACCI.png",
     title: "FULMINACCI",
     description: "FULMINACCI (AFTERMOVIE)",
@@ -74,6 +82,7 @@ export const projects = [
   {
     id: 9,
     type: "local",
+    videoUrl: "",
     url: "/images/ANGELINAMANGO.jpg",
     title: "ANGELINA MANGO",
     description: "ANGELINA MANGO (TikTok)",
@@ -83,6 +92,7 @@ export const projects = [
   {
     id: 10,
     type: "local",
+    videoUrl: "",
     url: "/images/CALCUTTA.jpg",
     title: "CALCUTTA",
     description: "CALCUTTA (AFTERMOVIE)",

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
@@ -15,10 +14,6 @@ import { projects } from "@/utils/projects_music";
 import { projectsFashion } from "@/utils/projects_fashion";
 import Navigation from "./Navigation";
 import Link from "next/link";
-
-const YouTubePlayer = dynamic(() => import("react-player/youtube"), {
-  ssr: false,
-});
 
 const LandingCarousel = ({ dataType }) => {
   let dataProjects;
@@ -72,34 +67,24 @@ const LandingCarousel = ({ dataType }) => {
               }}
               transition={{ duration: 0.3 }}
               className="flex flex-col items-center h-fit w-full p-2">
-              {project?.type == "youtube" && (
-                <YouTubePlayer
-                  url={project.url}
-                  width="600px"
-                  height="400px"
-                  className="max-w-full max-h-full object-cover"
-                />
-              )}
               <Link href={`/project/${project.id}`}>
-                {project.type === "local" && (
-                  <div className="relative group">
-                    <Image
-                      src={project.url}
-                      alt={project.title}
-                      width={700}
-                      height={500}
-                      className="max-w-full max-h-full object-cover group-hover:opacity-50 transition-opacity duration-300"
-                    />
-                    <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
-                      <span className="text-white text-lg font-bold">
-                        {project.title}
-                      </span>
-                      <p>
-                        <b>clicca</b> per scoprire di più
-                      </p>
-                    </div>
+                <div className="relative group">
+                  <Image
+                    src={project.url}
+                    alt={project.title}
+                    width={700}
+                    height={500}
+                    className="max-w-full max-h-full object-cover group-hover:opacity-50 transition-opacity duration-300"
+                  />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
+                    <span className="text-white text-lg font-bold">
+                      {project.title}
+                    </span>
+                    <p>
+                      <b>clicca</b> per scoprire di più
+                    </p>
                   </div>
-                )}
+                </div>
               </Link>
             </motion.div>
 

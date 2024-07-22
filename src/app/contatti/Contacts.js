@@ -62,10 +62,21 @@ const Contacts = () => {
   };
 
   return (
-    <div className="relative h-screen overflow-hidden">
-      <div className="absolute inset-0 z-10 flex flex-col justify-between p-6 bg-opacity-75 bg-gray-900 text-white">
-        <LoadingOverlay isLoading={isLoading} />
-        <div className="flex flex-col gap-2 text-lg text-end font-medium">
+    <div className="relative h-screen flex flex-col md:flex-row overflow-hidden">
+      <LoadingOverlay isLoading={isLoading} />
+
+      <div className="relative flex-1 h-1/3 md:h-full">
+        <Image
+          alt=""
+          src={imgProfile2}
+          layout="fill"
+          objectFit="cover"
+          className="z-0"
+        />
+      </div>
+
+      <div className="relative z-10 flex flex-col justify-center items-center p-6 bg-opacity-75  text-white md:w-1/2">
+        {/* <div className="flex flex-col gap-2 text-lg text-end font-medium mb-8">
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -86,17 +97,17 @@ const Contacts = () => {
             href={"https://www.instagram.com/memegirvl/"}
             className="w-max self-end hover:underline">
             INSTAGRAM
-          </motion.a>
-        </div>
+          </motion.a> 
+        </div> */}
 
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 self-center fixed w-9/12 md:w-2/3 pt-6 mt-32">
-          <div className="flex flex-row w-full gap-6">
+          className="flex flex-col gap-4 w-full max-w-md">
+          <div className="flex flex-col md:flex-row w-full gap-6">
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="nome">NOME</label>
               <input
-                className="bg-[#182236] bg-opacity-75 rounded-lg border-2 border-gray-700 w-full p-2"
+                className="bg-black bg-opacity-75 rounded-lg border-2 border-gray-700 w-full p-2"
                 name="nome"
                 type="text"
                 value={formData.nome}
@@ -108,7 +119,7 @@ const Contacts = () => {
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="email">EMAIL</label>
               <input
-                className="bg-[#182236] bg-opacity-75 rounded-lg border-2 border-gray-700 w-full p-2"
+                className="bg-black bg-opacity-75 rounded-lg border-2 border-gray-700 w-full p-2"
                 name="email"
                 type="email"
                 value={formData.email}
@@ -120,7 +131,7 @@ const Contacts = () => {
 
           <div className="flex flex-col text-center gap-2">
             <textarea
-              className="bg-[#182236] bg-opacity-75 text-white rounded-lg border-2 border-gray-700 w-full p-2"
+              className="bg-black bg-opacity-75 text-white rounded-lg border-2 border-gray-700 w-full p-2"
               name="contenuto"
               placeholder="COME POSSO AIUTARTI?"
               value={formData.contenuto}
@@ -140,16 +151,8 @@ const Contacts = () => {
           </motion.button>
         </form>
 
-        <h1 className="self-end text-5xl bottom-5">CONTATTI</h1>
+        <h1 className="self-end text-5xl mt-8">CONTATTAMI</h1>
       </div>
-
-      <Image
-        alt=""
-        src={imgProfile2}
-        layout="fill"
-        objectFit="cover"
-        className="z-0 rounded-xl"
-      />
 
       {success && (
         <div className="absolute top-0 left-0 right-0 z-20 bg-green-500 text-white text-center p-4 rounded-b-lg">

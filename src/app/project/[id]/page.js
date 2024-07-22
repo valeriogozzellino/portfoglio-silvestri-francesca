@@ -1,9 +1,10 @@
-import VideoPlayer from "@/components/VideoPlayer";
 import { projects } from "@/utils/projects_music";
 import { imgProjects } from "@/utils/img_projects";
 import Image from "next/image";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
 import "../../globals.css";
+import YouTubePlayer from "@/components/YoutubePlayer";
+
 const Project = ({ params }) => {
   const project = projects.find((p) => p.id == params.id);
   const imgsProject = imgProjects.filter((img) => img.idProject == params.id);
@@ -21,11 +22,21 @@ const Project = ({ params }) => {
         </h3>
       </div>
       <div className="w-full flex items-center justify-center">
-        <video
-          src={project.url}
-          controls
-          style={{ width: "100vh", height: "70vh" }}
-        />
+        {project?.type == "youtube" && (
+          <YouTubePlayer
+            url={project.videoUrl}
+            width="600px"
+            height="300px"
+            className="max-w-full max-h-full object-cover"
+          />
+        )}
+        {project.type === "local" && (
+          <video
+            src={project.videoUrl}
+            controls
+            style={{ width: "100vh", height: "70vh" }}
+          />
+        )}
       </div>
       <div className="mt-6 w-4/5 text-xl md:text-xl lg:text-2xl md:px-[10%]">
         <h5 className="self-center">
@@ -44,8 +55,8 @@ const Project = ({ params }) => {
             <Image
               src={img.url}
               alt={img.alt}
-              width={300} // Aggiungi una larghezza appropriata
-              height={200} // Aggiungi un'altezza appropriata
+              width={300}
+              height={200}
               className="ml-11 rounded-lg lg:ml-9"
             />
           </div>
