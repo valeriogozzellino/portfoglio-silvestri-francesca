@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import imgProfile2 from "./imgProfile2.jpg";
 import { motion } from "framer-motion";
@@ -16,6 +16,8 @@ const Contacts = () => {
 
   const [isLoading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState("up");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -61,11 +63,37 @@ const Contacts = () => {
       );
   };
 
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setScrollDirection("down");
+      } else {
+        setScrollDirection("up");
+      }
+      setScrollY(currentScrollY);
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="relative h-screen flex flex-col md:flex-row overflow-hidden">
       <LoadingOverlay isLoading={isLoading} />
 
-      <div className="relative flex-1 h-1/3 md:h-full">
+      <div
+        className={`relative flex-1 h-3/4 md:h-full transition-opacity duration-500 ${
+          scrollDirection === "down" && scrollY > 100
+            ? "opacity-0 md:opacity-100"
+            : "opacity-100"
+        }`}>
         <Image
           alt=""
           src={imgProfile2}
@@ -75,31 +103,12 @@ const Contacts = () => {
         />
       </div>
 
-      <div className="relative z-10 flex flex-col justify-center items-center p-6 bg-opacity-75  text-white md:w-1/2">
-        {/* <div className="flex flex-col gap-2 text-lg text-end font-medium mb-8">
-          <motion.a
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            href="tel:+393245822464"
-            className="w-max self-end hover:underline">
-            +39 324 582 2464
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            href="mailto:fsilvestrivideo@gmail.com"
-            className="w-max self-end hover:underline">
-            {"fsilvestrivideo@gmail.com".toUpperCase()}
-          </motion.a>
-          <motion.a
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            href={"https://www.instagram.com/memegirvl/"}
-            className="w-max self-end hover:underline">
-            INSTAGRAM
-          </motion.a> 
-        </div> */}
-
+      <div
+        className={`relative z-10 flex flex-col justify-center items-center p-6 bg-opacity-75 bg-gray-900 text-white md:bg-transparent md:w-1/2 ${
+          scrollDirection === "down" && scrollY > 100
+            ? "fixed top-0 left-0 w-full h-full"
+            : ""
+        }`}>
         <form
           onSubmit={handleSubmit}
           className="flex flex-col gap-4 w-full max-w-md">
@@ -151,7 +160,7 @@ const Contacts = () => {
           </motion.button>
         </form>
 
-        <h1 className="self-end text-5xl mt-8">CONTATTAMI</h1>
+        <h1 className="self-end text-5xl mt-8">CONTATTI</h1>
       </div>
 
       {success && (
