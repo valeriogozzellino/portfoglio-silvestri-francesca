@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import crow from "./crow.webp";
+import imgProfile from "./imgProfile.webp";
 import { motion } from "framer-motion";
 import LoadingOverlay from "@/components/LoadingOverlay";
-
 const Contacts = () => {
   const [formData, setFormData] = useState({
     nome: "",
@@ -66,8 +66,8 @@ const Contacts = () => {
       <LoadingOverlay isLoading={isLoading} />
       <Image
         alt=""
-        src={crow}
-        className="w-[100%] max-w-[500px] max-h-[200px] md:max-h-max rounded-lg self-center"
+        src={imgProfile}
+        className="w-[100%] max-w-[500px] max-h-[300px] md:max-h-[600px] rounded-lg self-center"
       />
 
       <div className="flex flex-col justify-between w-full">

@@ -50,15 +50,15 @@ export default function Home() {
           staggerDuration={0.5}
           className="text-center mb-4 mt-10 text-xl md:text-2xl lg:text-4xl "
         />
-        <div className="w-3/5 md:w-2/3 lg:w-1/2">
+        <div className="w-full md:w-full lg:w-1/2">
           <TextGenerateEffect
             duration={0.5}
             words={
-              "Sono un videomaker professionista specializzato nella creazione di video musicali e spot pubblicitari di moda. Con un livello di competenza avanzato, ho lavorato su numerosi progetti di alto profilo, catturando l'essenza di concerti ed eventi per immortalare i momenti più emozionanti. Il mio obiettivo è permettere alle persone di rivivere queste esperienze uniche o di scoprirle per la prima volta attraverso i miei video. Nel mio portfolio troverai una selezione dei miei lavori, che testimoniano la passione e l'attenzione ai dettagli che metto in ogni progetto."
+              "Sono un videomaker professionista specializzato nella creazione di video musicali e spot pubblicitari di moda. Con un livello di competenza avanzato, ho lavorato su numerosi progetti di alto profilo, catturando l'essenza di concerti ed eventi per immortalare i momenti più emozionanti. Il mio obiettivo è permettere alle persone di rivivere queste esperienze uniche o di scoprirle per la prima volta attraverso i miei video."
             }
             startDelay={4}
             staggerDuration={0}
-            className="text-center mb-10 text-slate-200"
+            className="text-center mb-10 text-slate-200 w-full"
           />
         </div>
       </div>

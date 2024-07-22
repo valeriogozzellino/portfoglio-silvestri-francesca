@@ -39,7 +39,7 @@ export const projects = [
     id: 5,
     type: "local",
     url: "/videos/pinguini.mp4",
-    title: "PINGUINI TATTICI NUCLEARI",
+    title: "PINGUINI",
     description: "PINGUINI TATTICI NUCLEARI (aftermovie)",
     detailedDescription:
       "Collaborare con i Pinguini Tattici Nucleari in questo progetto di videomaking è stata un'esperienza straordinariamente vivace e colorata. Il gruppo, noto per il suo stile unico e le esibizioni energiche, ha portato una ventata di freschezza e originalità sul set. Abbiamo catturato l'essenza della loro musica attraverso una serie di scene che alternano momenti di pura gioia collettiva a riflessioni più intime, il tutto incorniciato da scenari visivi inventivi e spesso giocosi. Questo video mira a celebrare la loro musica e a mostrare l'indiscutibile coesione e il divertimento che caratterizzano ogni loro performance.",
