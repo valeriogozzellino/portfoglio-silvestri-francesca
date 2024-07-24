@@ -102,3 +102,7 @@ body {
 .image-container:hover {
   transform: translateY(-5px);
 }
+
+.noscroll {
+  overflow: hidden;
+}

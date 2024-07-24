@@ -4,10 +4,6 @@ export const routes = [
     href: "/",
   },
   {
-    title: "Portfolio",
-    href: "/",
-  },
-  {
     title: "Contatti",
     href: "/contatti",
   },
