@@ -85,13 +85,12 @@ const Contacts = () => {
           opacity: scrollDirection === "down" && scrollY > 100 ? 0 : 1,
         }}
         transition={{ duration: 0.5 }}
-        className="relative flex-1 h-3/4 md:h-full">
+        className="relative flex-1 h-3/4 md:h-full min-h-[300px]">
         <Image
-          alt=""
           src={imgProfile2}
-          layout="fill"
-          objectFit="cover"
-          className="z-0"
+          fill
+          style={{ objectFit: "cover" }}
+          alt="Profile Image"
         />
       </motion.div>
 
@@ -99,7 +98,7 @@ const Contacts = () => {
         initial={{ y: 0 }}
         animate={{ y: scrollDirection === "down" && scrollY > 100 ? -100 : 0 }}
         transition={{ duration: 0.5 }}
-        className="relative z-10 flex flex-col justify-center items-center p-6 bg-opacity-75 bg-gray-900 text-white md:bg-transparent md:w-1/2">
+        className="relative z-10 flex flex-col justify-center items-center p-6 bg-opacity-75 bg-gray-900 text-white md:bg-transparent md:w-1/2 md:h-full">
         <form
           onSubmit={handleSubmit}
           className="flex flex-col gap-4 w-full max-w-md">
@@ -115,7 +114,6 @@ const Contacts = () => {
                 required
               />
             </div>
-
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="email">EMAIL</label>
               <input
@@ -128,7 +126,6 @@ const Contacts = () => {
               />
             </div>
           </div>
-
           <div className="flex flex-col text-center gap-2">
             <textarea
               className="bg-black bg-opacity-75 text-white rounded-lg border-2 border-gray-700 w-full p-2"
@@ -141,7 +138,6 @@ const Contacts = () => {
               style={{ resize: "none", overflow: "auto" }}
             />
           </div>
-
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -150,7 +146,6 @@ const Contacts = () => {
             {isLoading ? "INVIO..." : "INVIA"}
           </motion.button>
         </form>
-
         <h1 className="self-end text-5xl mt-8">CONTATTI</h1>
       </motion.div>
 
