@@ -76,7 +76,7 @@ const Contacts = () => {
   }, [scrollY]);
 
   return (
-    <div className="relative h-screen flex flex-col md:flex-row overflow-hidden">
+    <div className="relative h-fit flex flex-col md:flex-row overflow-hidden">
       <LoadingOverlay isLoading={isLoading} />
 
       <motion.div
