@@ -10,15 +10,26 @@ const Project = ({ params }) => {
   const imgsProject = imgProjects.filter((img) => img.idProject == params.id);
 
   return (
-    <div className="flex flex-col w-full justify-center items-center">
-      <div className="w-full text-2xl md:text-xl lg:text-6xl md:px-[10%]">
+    <div className="flex flex-col w-full justify-center  items-center">
+      <div className="w-full text-3xl text-center md:text-3xl lg:text-6xl mt-20 md:px-[10%]">
+        <h3 className="self-center">
+          <TextGenerateEffect
+            words={project.description}
+            duration={1.5}
+            startDelay={1.5}
+            staggerDuration={0}
+            className="font-bold mb-6"
+          />
+        </h3>
+      </div>
+      <div className="w-full text-xl text-center md:text-xl lg:text-3xl md:px-[10%]">
         <h3 className="self-center">
           <TextGenerateEffect
             words={project.title}
             duration={1.5}
             startDelay={1.5}
             staggerDuration={0}
-            className="font-bold mb-6"
+            className="mb-6"
           />
         </h3>
       </div>
