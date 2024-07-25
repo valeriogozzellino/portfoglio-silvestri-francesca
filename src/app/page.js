@@ -2,6 +2,7 @@
 
 import CardsCarousel from "@/components/Carousels/CardsCarousel";
 import LandingCarousel from "@/components/Carousels/LandingCarousel";
+import Gallery from "@/components/Gallery";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
 import { useEffect } from "react";
 export default function Home() {
@@ -54,22 +55,23 @@ export default function Home() {
       </div>
 
       {/* <HorizontalCarousel /> */}
-      <div className="w-full  mt-10 text-2xl md:text-xl lg:text-6xl md:px-[10%]">
-        <h3 className="self-center">
+      <div className="w-full mt-10 text-3xl md:text-2xl lg:text-6xl md:px-[10%]">
+        <h2 className="self-center">
           <TextGenerateEffect
-            words={"VIDEO MUSICALI"}
+            words={"MUSIC"}
             duration={1.5}
             startDelay={2}
             staggerDuration={0}
             className="font-bold"
           />
-        </h3>
+        </h2>
       </div>
-      <LandingCarousel dataType={0} />
+      <Gallery dataType={0} />
+      {/* <LandingCarousel dataType={0} /> */}
       <div className="w-full text-2xl md:text-xl lg:text-6xl md:px-[10%]">
         <h3 className="self-center">
           <TextGenerateEffect
-            words={"SPOT PUBBLICITARI DI MODA"}
+            words={"FASHION"}
             duration={1.5}
             startDelay={2}
             staggerDuration={0}
@@ -77,7 +79,8 @@ export default function Home() {
           />
         </h3>
       </div>
-      <LandingCarousel dataType={1} />
+      <Gallery dataType={1} />
+      {/* <LandingCarousel dataType={1} /> */}
     </div>
   );
 }

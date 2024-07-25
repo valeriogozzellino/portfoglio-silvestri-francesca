@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
 
         <CustomCursor />
 
-        <main className="w-full h-full px-12">{children}</main>
+        <main className="w-full h-full px-10">{children}</main>
       </body>
     </html>
   );

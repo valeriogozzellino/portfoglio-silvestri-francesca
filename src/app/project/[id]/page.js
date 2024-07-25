@@ -8,6 +8,7 @@ import YouTubePlayer from "@/components/YouTubePlayer";
 const Project = ({ params }) => {
   const project = projects.find((p) => p.id == params.id);
   const imgsProject = imgProjects.filter((img) => img.idProject == params.id);
+
   return (
     <div className="flex flex-col w-full justify-center items-center">
       <div className="w-full text-2xl md:text-xl lg:text-6xl md:px-[10%]">
@@ -45,19 +46,19 @@ const Project = ({ params }) => {
             duration={1.5}
             startDelay={1.5}
             staggerDuration={0}
-            className=" text-center mb-6"
+            className="text-center mb-6"
           />
         </h5>
       </div>
-      <div className="mt-6 mb-5 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 justify-center">
+      <div className="mt-6 mb-5 w-4/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
         {imgsProject.map((img, index) => (
-          <div className="p-1 image-container" key={index}>
+          <div className="p-2" key={index}>
             <Image
               src={img.url}
               alt={img.alt}
-              width={300}
-              height={200}
-              className="ml-11 rounded-lg lg:ml-9"
+              className="rounded-lg"
+              width={700}
+              height={500}
             />
           </div>
         ))}

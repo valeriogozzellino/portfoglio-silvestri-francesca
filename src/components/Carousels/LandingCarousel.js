@@ -9,6 +9,7 @@ import {
   Keyboard,
   Mousewheel,
   Zoom,
+  Autoplay,
 } from "swiper/modules";
 import { projects } from "@/utils/projects_music";
 import { projectsFashion } from "@/utils/projects_fashion";
@@ -36,7 +37,7 @@ const LandingCarousel = ({ dataType }) => {
   };
 
   return (
-    <div id="portfolio" className="w-full pb-[10%] min-h-28">
+    <div id="portfolio" className="w-full pb-[5%] min-h-28">
       <Swiper
         centeredSlides={true}
         autoHeight
@@ -74,7 +75,7 @@ const LandingCarousel = ({ dataType }) => {
                     alt={project.title}
                     width={700}
                     height={500}
-                    className="max-w-full max-h-full object-cover group-hover:opacity-50 transition-opacity duration-300"
+                    className="max-w-full max-h-full rounded object-cover group-hover:opacity-50 transition-opacity duration-300"
                   />
                   <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
                     <span className="text-white text-lg font-bold">
@@ -88,13 +89,13 @@ const LandingCarousel = ({ dataType }) => {
               </Link>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               initial={{ scale: 0.85 }}
               animate={{ scale: activeSlide === index ? 1 : 0.85 }}
               transition={{ duration: 0.5 }}
               className="text-center pt-4">
               <h1 className="font-semibold">{project.description}</h1>
-            </motion.div>
+            </motion.div> */}
           </SwiperSlide>
         ))}
         <Navigation />
