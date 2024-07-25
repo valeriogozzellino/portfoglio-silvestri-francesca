@@ -38,7 +38,7 @@ const HamburgerButton = ({ open, setOpen }) => {
 
 const NavList = ({ isOpen, setOpen, active }) => {
   return (
-    <div className="md:hidden z-50">
+    <div className="md:hidden z-50 ">
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -46,7 +46,7 @@ const NavList = ({ isOpen, setOpen, active }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="flex flex-col justify-between absolute left-0 right-0 top-0 bottom-0 p-5 bg-white z-30">
+            className="flex flex-col justify-between absolute left-0 right-0 top-0 bottom-0 p-5 h-screen bg-white z-30">
             <ul className="grid gap-2 mt-14">
               {routes.map((route, idx) => (
                 <motion.li
@@ -159,10 +159,10 @@ const NavMobile = () => {
   }, [isOpen]);
 
   return (
-    <>
+    <div className="fixed top-0 left-0 right-0 z-50 bg-black ">
       <HamburgerButton open={isOpen} setOpen={setOpen} />
       <NavList isOpen={isOpen} setOpen={setOpen} active={activeLink} />
-    </>
+    </div>
   );
 };
 

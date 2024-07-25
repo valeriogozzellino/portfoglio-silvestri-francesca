@@ -21,7 +21,7 @@ const NavItem = ({ text, to, isImage, imgSrc, imgAlt }) => {
 
 const NavDesktop = () => {
   return (
-    <nav className="hidden md:flex flex-row w-full justify-between p-6">
+    <nav className="hidden md:flex flex-row w-full justify-between fixed bg-black z-10 p-6">
       <NavItem
         isImage={true}
         imgSrc="/images/logo.png"

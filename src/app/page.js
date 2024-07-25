@@ -9,8 +9,9 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       window.scrollTo({
-        top: 500,
+        top: 600,
         behavior: "smooth",
+        timer: 0.5,
       });
     }, 3000);
 
@@ -18,7 +19,7 @@ export default function Home() {
   }, []);
   return (
     <div className="flex flex-col justify-center w-full gap-16">
-      <div className="relative h-[55vh] md:h-[70vh]">
+      <div className="relative mt-8 h-[55vh] md:h-[70vh]">
         {/* Title */}
         <div className="flex flex-col justify-end h-full text-4xl md:text-6xl lg:text-8xl md:px-[10%]">
           <h1 className="self-start">
