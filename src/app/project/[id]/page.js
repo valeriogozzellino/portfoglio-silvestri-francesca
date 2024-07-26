@@ -46,6 +46,7 @@ const Project = ({ params }) => {
           <video
             src={project.videoUrl}
             controls
+            preload="auto"
             style={{ width: "100vh", height: "70vh" }}
           />
         )}

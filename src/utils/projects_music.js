@@ -22,7 +22,8 @@ export const projects = [
   {
     id: 3,
     type: "local",
-    videoUrl: "/videos/Marracash_Annuncio.mp4",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/kv77ldvy3raz98bamlzcj/DEF-PRORES.mov?rlkey=55bhux05mumcq37zaxsm3hmv9&raw=1",
     url: "/images/MARRAGEDDON.jpg",
     title: "MARRACASH - GUE",
     description: "MARRAGHEDDON",
@@ -32,7 +33,8 @@ export const projects = [
   {
     id: 4,
     type: "local",
-    videoUrl: "/videos/MERCH_EXP_MERCH_2.mp4",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/vpnkzuhhne5xie91s2bn6/MERCH_EXP_MERCH_2.mov?rlkey=zkeeufqtwny9s1dkf7tp1jr9t&st=igirkrsg&raw=1",
     url: "/images/merchMecna.png",
     title: "MECNA",
     description: "MERCANDISING di MECNA ",
@@ -42,7 +44,8 @@ export const projects = [
   {
     id: 5,
     type: "local",
-    videoUrl: "/videos/pinguini.mp4",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/p4rsmra6cinypxumbccxb/pinguini-con-color-social.mp4?rlkey=fsbwfdm2izfckamkbraf93x7t&raw=1",
     url: "/images/PINGUINI.jpeg",
     title: "PINGUINI",
     description: "PINGUINI TATTICI NUCLEARI (aftermovie)",
@@ -52,7 +55,8 @@ export const projects = [
   {
     id: 6,
     type: "local",
-    videoUrl: "/videos/fibra.mov",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/kez1whrivd4izjg9v09at/memegirvl_Fibra_Pescara080823.mov?rlkey=3wclcy0t8l6uu215oag6xprma&raw=1",
     url: "/images/FABRIFIBRA.jpg",
     title: "FABRI FIBRA",
     description: "FABRI FIBRA a Pescara (aftermovie)",
@@ -62,7 +66,8 @@ export const projects = [
   {
     id: 7,
     type: "local",
-    videoUrl: "/videos/madame_V5_Roma.mp4",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/dk6mliollbn65bctljpg2/Madame_V5_Roma.mov?rlkey=lb7q2gs7wkrvritu0y4qe0zng&raw=1",
     url: "/images/MADAME.jpg",
     title: "MADAME",
     description: "MADAME",
@@ -72,7 +77,8 @@ export const projects = [
   {
     id: 8,
     type: "local",
-    videoUrl: "/videos/fulminacci.mp4",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/6cdvtoy9mx82tdiifp436/Non-ero-pronto-a-settemila-voci-l-davanti.-Milano-due-volte-grazie-non-posso-dimenticarlo-Ci-vediamo-marted-a-Torino-venerd-a-Napoli-sabato-a-Roma-dir.-maurizio_zazza-cam-op.-memegirvl-maurizio_zazza-Edit.-sharkprductions.mp4?rlkey=cvnwaw2rzc0fjdt4jwbxufg58&st=fcxo2f8e&raw=1",
     url: "/images/FULMINACCI.png",
     title: "FULMINACCI",
     description: "FULMINACCI (AFTERMOVIE)",
@@ -82,7 +88,8 @@ export const projects = [
   {
     id: 9,
     type: "local",
-    videoUrl: "",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/v9flwrvgt5a95c9dgsmlp/REACTION_AM_V4.mov?rlkey=6u8o1boo0dny122q6azi8euv5&st=f5lxdtoq&raw=1",
     url: "/images/ANGELINAMANGO.jpg",
     title: "ANGELINA MANGO",
     description: "ANGELINA MANGO (TikTok)",
@@ -92,7 +99,8 @@ export const projects = [
   {
     id: 10,
     type: "local",
-    videoUrl: "",
+    videoUrl:
+      "https://www.dropbox.com/scl/fo/7391r7n9j2cze89ucfjb1/AOQcnXn_25LItfYoV_uARW4?rlkey=7oqgn4govrcs0wsn7e9ia62oo&st=wpivulc9&raw=1",
     url: "/images/CALCUTTA.jpg",
     title: "CALCUTTA",
     description: "CALCUTTA (AFTERMOVIE)",
