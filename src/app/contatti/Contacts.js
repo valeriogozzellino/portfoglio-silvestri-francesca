@@ -16,7 +16,6 @@ const Contacts = () => {
 
   const [isLoading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
   const [scrollDirection, setScrollDirection] = useState("up");
 
   const handleChange = (e) => {
@@ -63,27 +62,12 @@ const Contacts = () => {
       );
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-      setScrollDirection(
-        window.scrollY > scrollY ? "down" : window.scrollY < scrollY ? "up" : ""
-      );
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [scrollY]);
-
   return (
     <div className="relative h-full flex flex-col md:flex-row overflow-hidden">
       <LoadingOverlay isLoading={isLoading} />
 
       <motion.div
         initial={{ opacity: 1 }}
-        animate={{
-          opacity: scrollDirection === "down" && scrollY > 100 ? 0 : 1,
-        }}
         transition={{ duration: 0.5 }}
         className="relative flex-1 h-3/4 md:h-full min-h-[300px]">
         <Image
@@ -96,7 +80,6 @@ const Contacts = () => {
 
       <motion.div
         initial={{ y: 0 }}
-        animate={{ y: scrollDirection === "down" && scrollY > 100 ? -100 : 0 }}
         transition={{ duration: 0.5 }}
         className="relative z-10 flex flex-col justify-center items-center p-6 bg-opacity-75 bg-gray-900 text-white md:bg-transparent md:w-1/2 md:h-full">
         <form
