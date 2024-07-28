@@ -1,14 +1,13 @@
-import { projects } from "@/utils/projects_music";
-import { projectsFashion } from "@/utils/projects_fashion";
+import { projects } from "@/utils/projects";
 import Image from "next/image";
 import Link from "next/link";
 
 const Gallery = ({ dataType }) => {
   let dataProjects;
   if (dataType === 0) {
-    dataProjects = projects;
+    dataProjects = projects.filter((project) => project.category === "music");
   } else {
-    dataProjects = projectsFashion;
+    dataProjects = projects.filter((project) => project.category === "fashion");
   }
 
   return (

@@ -69,7 +69,7 @@ const Contacts = () => {
       <motion.div
         initial={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="relative flex-1 h-3/4 md:h-full min-h-[300px]">
+        className="relative flex-1 h-64 md:h-full min-h-[300px]">
         <Image
           src={imgProfile2}
           fill
@@ -109,7 +109,8 @@ const Contacts = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col text-center gap-2">
+          <div className="flex flex-col gap-2">
+            <label htmlFor="nome">MESSAGGIO</label>
             <textarea
               className="bg-black bg-opacity-75 text-white rounded-lg border-2 border-gray-700 w-full p-2"
               name="contenuto"
@@ -124,12 +125,12 @@ const Contacts = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="border w-max self-start rounded-lg px-8 py-2 hover:bg-white hover:text-black transition-colors duration-400"
+            className="border w-full md:w-max self-start rounded-lg px-8 py-2 hover:bg-white hover:text-black transition-colors duration-400"
             type="submit">
             {isLoading ? "INVIO..." : "INVIA"}
           </motion.button>
         </form>
-        <h1 className="self-end text-5xl mt-8">CONTATTI</h1>
+        <h1 className="self-end text-3xl md:text-5xl mt-8">CONTATTI</h1>
       </motion.div>
 
       {success && (

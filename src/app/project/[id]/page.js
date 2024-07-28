@@ -1,6 +1,7 @@
-import { projects } from "@/utils/projects_music";
+import { projects } from "@/utils/projects";
 import { imgProjects } from "@/utils/img_projects";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
 import "../../globals.css";
 import YouTubePlayer from "@/components/YouTubePlayer";

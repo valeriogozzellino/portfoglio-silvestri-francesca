@@ -11,17 +11,16 @@ import {
   Zoom,
   Autoplay,
 } from "swiper/modules";
-import { projects } from "@/utils/projects_music";
-import { projectsFashion } from "@/utils/projects_fashion";
+import { projects } from "@/utils/projects";
 import Navigation from "./Navigation";
 import Link from "next/link";
 
 const LandingCarousel = ({ dataType }) => {
   let dataProjects;
-  if (dataType == 0) {
-    dataProjects = projects;
+  if (dataType === 0) {
+    dataProjects = projects.filter((project) => project.category === "music");
   } else {
-    dataProjects = projectsFashion;
+    dataProjects = projects.filter((project) => project.category === "fashion");
   }
   const [activeSlide, setActiveSlide] = useState(0);
   const handleSlideChange = (swiper) => {

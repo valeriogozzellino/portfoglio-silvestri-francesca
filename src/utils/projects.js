@@ -2,6 +2,7 @@ export const projects = [
   {
     id: 1,
     type: "youtube",
+    category: "music",
     videoUrl: "https://www.youtube.com/watch?v=-w9hTgFkVG0",
     url: "/images/anna.png",
     title: "ANNA PEPE",
@@ -12,6 +13,7 @@ export const projects = [
   {
     id: 2,
     type: "youtube",
+    category: "music",
     videoUrl: "https://www.youtube.com/watch?v=vK9ybpAcPgo",
     url: "/images/MECNA.jpeg",
     title: "MECNA",
@@ -22,6 +24,7 @@ export const projects = [
   {
     id: 3,
     type: "local",
+    category: "music",
     videoUrl:
       "https://www.dropbox.com/scl/fi/kv77ldvy3raz98bamlzcj/DEF-PRORES.mov?rlkey=55bhux05mumcq37zaxsm3hmv9&raw=1",
     url: "/images/MARRAGEDDON.jpg",
@@ -33,6 +36,7 @@ export const projects = [
   {
     id: 4,
     type: "local",
+    category: "music",
     videoUrl:
       "https://www.dropbox.com/scl/fi/vpnkzuhhne5xie91s2bn6/MERCH_EXP_MERCH_2.mov?rlkey=zkeeufqtwny9s1dkf7tp1jr9t&st=igirkrsg&raw=1",
     url: "/images/merchMecna.png",
@@ -44,6 +48,7 @@ export const projects = [
   {
     id: 5,
     type: "local",
+    category: "music",
     videoUrl:
       "https://www.dropbox.com/scl/fi/p4rsmra6cinypxumbccxb/pinguini-con-color-social.mp4?rlkey=fsbwfdm2izfckamkbraf93x7t&raw=1",
     url: "/images/PINGUINI.jpeg",
@@ -55,6 +60,7 @@ export const projects = [
   {
     id: 6,
     type: "local",
+    category: "music",
     videoUrl:
       "https://www.dropbox.com/scl/fi/kez1whrivd4izjg9v09at/memegirvl_Fibra_Pescara080823.mov?rlkey=3wclcy0t8l6uu215oag6xprma&raw=1",
     url: "/images/FABRIFIBRA.jpg",
@@ -66,6 +72,7 @@ export const projects = [
   {
     id: 7,
     type: "local",
+    category: "music",
     videoUrl:
       "https://www.dropbox.com/scl/fi/dk6mliollbn65bctljpg2/Madame_V5_Roma.mov?rlkey=lb7q2gs7wkrvritu0y4qe0zng&raw=1",
     url: "/images/MADAME.jpg",
@@ -77,6 +84,7 @@ export const projects = [
   {
     id: 8,
     type: "local",
+    category: "music",
     videoUrl:
       "https://www.dropbox.com/scl/fi/6cdvtoy9mx82tdiifp436/Non-ero-pronto-a-settemila-voci-l-davanti.-Milano-due-volte-grazie-non-posso-dimenticarlo-Ci-vediamo-marted-a-Torino-venerd-a-Napoli-sabato-a-Roma-dir.-maurizio_zazza-cam-op.-memegirvl-maurizio_zazza-Edit.-sharkprductions.mp4?rlkey=cvnwaw2rzc0fjdt4jwbxufg58&st=fcxo2f8e&raw=1",
     url: "/images/FULMINACCI.png",
@@ -88,6 +96,7 @@ export const projects = [
   {
     id: 9,
     type: "local",
+    category: "music",
     videoUrl:
       "https://www.dropbox.com/scl/fi/v9flwrvgt5a95c9dgsmlp/REACTION_AM_V4.mov?rlkey=6u8o1boo0dny122q6azi8euv5&st=f5lxdtoq&raw=1",
     url: "/images/ANGELINAMANGO.jpg",
@@ -99,6 +108,7 @@ export const projects = [
   {
     id: 10,
     type: "local",
+    category: "music",
     videoUrl:
       "https://www.dropbox.com/scl/fo/7391r7n9j2cze89ucfjb1/AOQcnXn_25LItfYoV_uARW4?rlkey=7oqgn4govrcs0wsn7e9ia62oo&st=wpivulc9&raw=1",
     url: "/images/CALCUTTA.jpg",
@@ -106,5 +116,41 @@ export const projects = [
     description: "CALCUTTA (AFTERMOVIE)",
     detailedDescription:
       "Il progetto videomaking per Fulminacci cattura l'energia e l'emozione del suo concerto. Utilizzando tecniche di ripresa dinamiche e un montaggio incisivo, il video trascina lo spettatore in una performance indimenticabile. Il focus è sulla connessione tra Fulminacci e il suo pubblico, esaltando i momenti di interazione e la potente espressività delle sue canzoni, tutto avvolto in un'atmosfera visiva che amplifica l'esperienza del live.",
+  },
+  {
+    id: 11,
+    type: "local",
+    category: "fashion",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/403d5rg9hihe5wgw95wde/Mulaclogonero1.mp4?rlkey=m4tethaxevnwmpsh30kvu63jp&st=4gfdryxq&raw=1",
+    url: "/images/STUPIDOAMORE.jpg",
+    title: "Mulac & Moschino",
+    description: "Mulac e Moschino",
+    detailedDescription:
+      "Questo progetto videomaking presenta una collaborazione tra Mulac e Moschino, due giganti nel mondo della moda. Il video cattura un evento di lancio dove l'innovazione di Mulac incontra l'eleganza audace di Moschino, creando un'esperienza visiva ricca e affascinante. Gli outfit presentati sono esempi squisiti di design contemporaneo, con un'attenzione particolare agli abbinamenti di colori e materiali che riflettono le ultime tendenze. Un'immersione profonda nell'estetica unica che entrambi i marchi portano sul palcoscenico della moda internazionale.",
+  },
+  {
+    id: 12,
+    type: "local",
+    category: "fashion",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/dgokvibemer521yixosit/MULAC-Maleducata.mp4?rlkey=d240b4m8djbgyzcs0j1n9plgm&st=obdqofl2&raw=1",
+    url: "/images/MULAC.png",
+    title: "Mulac",
+    description: "Mulac maleducata",
+    detailedDescription:
+      "Nel video 'Mulac Maleducata', abbiamo esplorato un tema più audace e provocatorio, in linea con la campagna omonima di Mulac. Il video combina elementi di moda ed espressione personale, evidenziando come il brand sfida le convenzioni e celebra l'unicità. L'uso di colori intensi e composizioni audaci serve a creare un'atmosfera che è sia ribelle che fashionably chic, rispecchiando l'atteggiamento 'maleducato' che il brand vuole comunicare con questa linea.",
+  },
+  {
+    id: 13,
+    type: "local",
+    category: "fashion",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/z0k481dwqgfbvu2fq4ty8/MaxeCo_color3-exp_3.mov?rlkey=jv2atjv2vti1r3p5bxpf9m4ah&st=x02b1ao3&raw=1",
+    url: "/images/MULAC.png",
+    title: "Max & CO",
+    description: "MAX & CO",
+    detailedDescription:
+      "Il video 'Max & Co' è un'ode alla femminilità e all'eleganza, con un tocco di modernità e audacia. Il video cattura l'essenza del marchio, con abiti che esprimono una femminilità forte e indipendente. L'uso di colori tenui e materiali di alta qualità crea un'atmosfera di raffinatezza e stile, mentre le linee pulite e i tagli precisi conferiscono un tocco di modernità e freschezza. Un'ode alla bellezza e alla forza delle donne.",
   },
 ];
