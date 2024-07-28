@@ -1,32 +1,27 @@
 "use client";
-
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import emailjs from "emailjs-com";
+import crow from "./crow.webp";
+import imgProfile from "./imgProfile.webp";
 import imgProfile2 from "./imgProfile2.jpg";
 import { motion } from "framer-motion";
 import LoadingOverlay from "@/components/LoadingOverlay";
-
 const Contacts = () => {
   const [formData, setFormData] = useState({
     nome: "",
     email: "",
     contenuto: "",
   });
-
   const [isLoading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
-  const [scrollDirection, setScrollDirection] = useState("up");
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
     const templateParams = {
       from_name: formData.nome,
       from_email: formData.email,
@@ -34,7 +29,6 @@ const Contacts = () => {
       to_email: "gozzellinovalerio@gmail.com",
       subject: "richiesta contatti sito",
     };
-
     emailjs
       .send(
         "service_i7vu515",
@@ -61,35 +55,48 @@ const Contacts = () => {
         }
       );
   };
-
   return (
-    <div className="relative h-full flex flex-col md:flex-row overflow-hidden">
+    <div className="flex md:flex-row flex-col md:justify-between gap-6 pb-24 h-full relative">
       <LoadingOverlay isLoading={isLoading} />
+      <Image
+        alt=""
+        src={imgProfile2}
+        className="w-[100%] max-w-[500px] mt-12 max-h-[300px] md:max-h-[600px] rounded-lg self-center"
+      />
+      <div className="flex flex-col justify-between w-full">
+        <div className="flex flex-col gap-2 text-lg text-end font-medium">
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href="tel:+393245822464"
+            className="w-max self-end hover:underline">
+            +39 324 582 2464
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href="mailto:fsilvestrivideo@gmail.com"
+            className="w-max self-end hover:underline">
+            {"fsilvestrivideo@gmail.com".toUpperCase()}
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href={"https://www.instagram.com/memegirvl/"}
+            className="w-max self-end hover:underline">
+            INSTAGRAM
+          </motion.a>
+        </div>
 
-      <motion.div
-        initial={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="relative flex-1 h-64 md:h-full min-h-[300px]">
-        <Image
-          src={imgProfile2}
-          fill
-          style={{ objectFit: "cover" }}
-          alt="Profile Image"
-        />
-      </motion.div>
-
-      <motion.div
-        initial={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="relative z-10 flex flex-col justify-center items-center p-6 bg-opacity-75 bg-gray-900 text-white md:bg-transparent md:w-1/2 md:h-full">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 w-full max-w-md">
-          <div className="flex flex-col md:flex-row w-full gap-6">
+          className="flex flex-col gap-4 self-center md:w-2/3 pt-6">
+          <div className="flex flex-row w-full gap-6">
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="nome">NOME</label>
               <input
-                className="bg-black bg-opacity-75 rounded-lg border-2 border-gray-700 w-full p-2"
+                className="bg-black text-white rounded-lg border-2 border-gray-800
+              w-full p-2"
                 name="nome"
                 type="text"
                 value={formData.nome}
@@ -100,7 +107,8 @@ const Contacts = () => {
             <div className="flex flex-col w-full gap-2">
               <label htmlFor="email">EMAIL</label>
               <input
-                className="bg-black bg-opacity-75 rounded-lg border-2 border-gray-700 w-full p-2"
+                className="bg-black text-white rounded-lg border-2 border-gray-800
+              w-full p-2"
                 name="email"
                 type="email"
                 value={formData.email}
@@ -109,37 +117,37 @@ const Contacts = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-2">
-            <label htmlFor="nome">MESSAGGIO</label>
+          <div className="flex flex-col text-center gap-2">
+            <label htmlFor="contenuto">MESSAGGIO</label>
             <textarea
-              className="bg-black bg-opacity-75 text-white rounded-lg border-2 border-gray-700 w-full p-2"
+              className="bg-black text-white rounded-lg border-2 border-gray-800 w-full p-2"
               name="contenuto"
               placeholder="COME POSSO AIUTARTI?"
               value={formData.contenuto}
               onChange={handleChange}
               required
-              rows="5"
+              rows="5" // Puoi aumentare il numero di righe iniziali se necessario
               style={{ resize: "none", overflow: "auto" }}
             />
           </div>
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="border w-full md:w-max self-start rounded-lg px-8 py-2 hover:bg-white hover:text-black transition-colors duration-400"
+            className="border w-max self-start rounded-lg px-8 py-2 hover:bg-white hover:text-black transition-colors duration-400"
             type="submit">
             {isLoading ? "INVIO..." : "INVIA"}
           </motion.button>
         </form>
-        <h1 className="self-end text-3xl md:text-5xl mt-8">CONTATTI</h1>
-      </motion.div>
-
+        <h1 className="self-end md:relative text-5xl bottom-5 mt-4">
+          CONTATTI
+        </h1>
+      </div>
       {success && (
-        <div className="absolute top-0 left-0 right-0 z-20 bg-green-500 text-white text-center p-4 rounded-b-lg">
+        <div className="absolute top-0 left-0 right-0 bg-green-500 text-white text-center p-4 rounded-b-lg">
           Email inviata con successo!
         </div>
       )}
     </div>
   );
 };
-
 export default Contacts;
