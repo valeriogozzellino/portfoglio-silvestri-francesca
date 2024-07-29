@@ -11,7 +11,7 @@ const Gallery = ({ dataType }) => {
   }
 
   return (
-    <div id="portfolio" className="w-full pb-[5%]">
+    <div id="portfolio" className="w-full">
       <style jsx>{`
         @media (min-width: 1024px) {
           .hover-reveal {
@@ -23,8 +23,8 @@ const Gallery = ({ dataType }) => {
           }
         }
       `}</style>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mb-3">
-        {dataProjects.slice(0, 2).map((project, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-3">
+        {projects.slice(0, 2).map((project, index) => (
           <div key={index} className="relative group">
             <Link href={`/project/${project.id}`}>
               <Image
@@ -47,7 +47,7 @@ const Gallery = ({ dataType }) => {
         ))}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-3">
-        {dataProjects.slice(2, 5).map((project, index) => (
+        {projects.slice(2, 5).map((project, index) => (
           <div key={index} className="relative group">
             <Link href={`/project/${project.id}`}>
               <Image
@@ -69,7 +69,7 @@ const Gallery = ({ dataType }) => {
         ))}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 mb-3">
-        {dataProjects.slice(5, 7).map((project, index) => (
+        {projects.slice(5, 7).map((project, index) => (
           <div key={index} className="relative group">
             <Link href={`/project/${project.id}`}>
               <Image
@@ -90,8 +90,74 @@ const Gallery = ({ dataType }) => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3">
-        {dataProjects.slice(7, 10).map((project, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 mb-3">
+        {projects.slice(7, 10).map((project, index) => (
+          <div key={index} className="relative group">
+            <Link href={`/project/${project.id}`}>
+              <Image
+                src={project.url}
+                alt={project.title}
+                layout="responsive"
+                width={800}
+                height={700}
+                className="object-cover rounded"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
+                <div className="text-white text-center">
+                  <h3 className="text-2xl font-bold">{project.title}</h3>
+                  <p className="text-sm">{project.description}</p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 mb-3">
+        {projects.slice(10, 12).map((project, index) => (
+          <div key={index} className="relative group">
+            <Link href={`/project/${project.id}`}>
+              <Image
+                src={project.url}
+                alt={project.title}
+                layout="responsive"
+                width={800}
+                height={700}
+                className="object-cover rounded"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
+                <div className="text-white text-center">
+                  <h3 className="text-2xl font-bold">{project.title}</h3>
+                  <p className="text-sm">{project.description}</p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 mb-3">
+        {projects.slice(12, 15).map((project, index) => (
+          <div key={index} className="relative group">
+            <Link href={`/project/${project.id}`}>
+              <Image
+                src={project.url}
+                alt={project.title}
+                layout="responsive"
+                width={800}
+                height={700}
+                className="object-cover rounded"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
+                <div className="text-white text-center">
+                  <h3 className="text-2xl font-bold">{project.title}</h3>
+                  <p className="text-sm">{project.description}</p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-3 mb-3">
+        {projects.slice(15, 17).map((project, index) => (
           <div key={index} className="relative group">
             <Link href={`/project/${project.id}`}>
               <Image

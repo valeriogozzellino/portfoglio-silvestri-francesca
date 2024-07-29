@@ -59,7 +59,7 @@ export default function Home() {
       <div className="w-full mt-10 text-3xl md:text-2xl lg:text-6xl md:px-[10%]">
         <h2 className="self-center">
           <TextGenerateEffect
-            words={"MUSIC"}
+            words={"PROJECTS"}
             duration={1.5}
             startDelay={2}
             staggerDuration={0}
@@ -69,7 +69,7 @@ export default function Home() {
       </div>
       <Gallery dataType={0} />
       {/* <LandingCarousel dataType={0} /> */}
-      <div className="w-full text-2xl md:text-xl lg:text-6xl md:px-[10%]">
+      {/* <div className="w-full text-2xl md:text-xl lg:text-6xl md:px-[10%]">
         <h3 className="self-center">
           <TextGenerateEffect
             words={"FASHION"}
@@ -79,8 +79,8 @@ export default function Home() {
             className="font-bold"
           />
         </h3>
-      </div>
-      <Gallery dataType={1} />
+      </div> */}
+      {/* <Gallery dataType={1} /> */}
       {/* <LandingCarousel dataType={1} /> */}
     </div>
   );

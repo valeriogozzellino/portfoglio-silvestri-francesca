@@ -86,6 +86,18 @@ export const projects = [
     type: "local",
     category: "music",
     videoUrl:
+      "https://www.dropbox.com/scl/fi/woqaoteeycjw6t3qp8ez3/Marracash_Annuncio-negli-stadi.mp4?rlkey=bu8pmnww7s6grghax89r92pbo&st=48vnicwu&raw=1",
+    url: "/images/MarracashStadi.png",
+    title: "MARRACASH",
+    description: "Annuncio TOUR 2025 (operatrice camera)",
+    detailedDescription:
+      "Recentemente ho avuto il privilegio di lavorare alla realizzazione di un progetto di videomaking dedicato a una delle figure più affascinanti della scena musicale italiana: Madame. Questo progetto ha catturato l'essenza di una performance unica, dove Madame, con il suo inconfondibile carisma, si è posizionata al centro delle attenzioni, incantando il pubblico e la camera con la sua presenza scenica.",
+  },
+  {
+    id: 9,
+    type: "local",
+    category: "music",
+    videoUrl:
       "https://www.dropbox.com/scl/fi/6cdvtoy9mx82tdiifp436/Non-ero-pronto-a-settemila-voci-l-davanti.-Milano-due-volte-grazie-non-posso-dimenticarlo-Ci-vediamo-marted-a-Torino-venerd-a-Napoli-sabato-a-Roma-dir.-maurizio_zazza-cam-op.-memegirvl-maurizio_zazza-Edit.-sharkprductions.mp4?rlkey=cvnwaw2rzc0fjdt4jwbxufg58&st=fcxo2f8e&raw=1",
     url: "/images/FULMINACCI.png",
     title: "FULMINACCI",
@@ -94,7 +106,7 @@ export const projects = [
       "Il progetto videomaking per Fulminacci cattura l'energia e l'emozione del suo concerto. Utilizzando tecniche di ripresa dinamiche e un montaggio incisivo, il video trascina lo spettatore in una performance indimenticabile. Il focus è sulla connessione tra Fulminacci e il suo pubblico, esaltando i momenti di interazione e la potente espressività delle sue canzoni, tutto avvolto in un'atmosfera visiva che amplifica l'esperienza del live.",
   },
   {
-    id: 9,
+    id: 10,
     type: "local",
     category: "music",
     videoUrl:
@@ -106,7 +118,7 @@ export const projects = [
       "Il progetto videomaking per Fulminacci cattura l'energia e l'emozione del suo concerto. Utilizzando tecniche di ripresa dinamiche e un montaggio incisivo, il video trascina lo spettatore in una performance indimenticabile. Il focus è sulla connessione tra Fulminacci e il suo pubblico, esaltando i momenti di interazione e la potente espressività delle sue canzoni, tutto avvolto in un'atmosfera visiva che amplifica l'esperienza del live.",
   },
   {
-    id: 10,
+    id: 11,
     type: "local",
     category: "music",
     videoUrl:
@@ -118,7 +130,44 @@ export const projects = [
       "Il progetto videomaking per Fulminacci cattura l'energia e l'emozione del suo concerto. Utilizzando tecniche di ripresa dinamiche e un montaggio incisivo, il video trascina lo spettatore in una performance indimenticabile. Il focus è sulla connessione tra Fulminacci e il suo pubblico, esaltando i momenti di interazione e la potente espressività delle sue canzoni, tutto avvolto in un'atmosfera visiva che amplifica l'esperienza del live.",
   },
   {
-    id: 11,
+    id: 12,
+    type: "local",
+    category: "music",
+    videoUrl:
+      "https://cdn-prod-ccv.adobe.com/BrxjdsVkaQ6/rend/BrxjdsVkaQ6_576.mp4?hdnts=st%3D1722240113%7Eexp%3D1722499313%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FBrxjdsVkaQ6%2Frend%2F*%21%2Fi%2FBrxjdsVkaQ6%2Frend%2F*%21%2FBrxjdsVkaQ6%2Frend%2F*%21%2FBrxjdsVkaQ6%2Fimage%2F*%21%2FBrxjdsVkaQ6%2Fcaptions%2F*%7Ehmac%3D7ff441471751c1d4cf9a9e365909f72976c64b54ed003c707b0622556c139783",
+    url: "/images/CALCUTTA.jpg",
+    title: "FRANCO126",
+    description: "FRANCO126 - ROMA",
+    detailedDescription:
+      "Il progetto videomaking per Fulminacci cattura l'energia e l'emozione del suo concerto. Utilizzando tecniche di ripresa dinamiche e un montaggio incisivo, il video trascina lo spettatore in una performance indimenticabile. Il focus è sulla connessione tra Fulminacci e il suo pubblico, esaltando i momenti di interazione e la potente espressività delle sue canzoni, tutto avvolto in un'atmosfera visiva che amplifica l'esperienza del live.",
+  },
+  {
+    id: 13,
+    type: "local",
+    category: "music",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/dgokvibemer521yixosit/MULAC-Maleducata.mp4?rlkey=d240b4m8djbgyzcs0j1n9plgm&st=obdqofl2&raw=1",
+    url: "/images/achilleLauro.png",
+    title: "ACHILLE LAURO",
+    description: "Achille Lauro - MULAC (VIDEOCLIP)",
+    detailedDescription:
+      "Nel video 'Mulac Maleducata', abbiamo esplorato un tema più audace e provocatorio, in linea con la campagna omonima di Mulac. Il video combina elementi di moda ed espressione personale, evidenziando come il brand sfida le convenzioni e celebra l'unicità. L'uso di colori intensi e composizioni audaci serve a creare un'atmosfera che è sia ribelle che fashionably chic, rispecchiando l'atteggiamento 'maleducato' che il brand vuole comunicare con questa linea.",
+  },
+  {
+    id: 14,
+    type: "local",
+    category: "fashion",
+    videoUrl:
+      "https://www.dropbox.com/s/tye3z8pxy9u4t9n/Backstage_Vodka.mov?st=j5urgfgh&raw=1",
+    url: "/images/btsVodka.jpg",
+    title: "BTS_VODKA ",
+    description: "Mambo e ANNA PEPE",
+    detailedDescription:
+      "Nel video 'Mulac Maleducata', abbiamo esplorato un tema più audace e provocatorio, in linea con la campagna omonima di Mulac. Il video combina elementi di moda ed espressione personale, evidenziando come il brand sfida le convenzioni e celebra l'unicità. L'uso di colori intensi e composizioni audaci serve a creare un'atmosfera che è sia ribelle che fashionably chic, rispecchiando l'atteggiamento 'maleducato' che il brand vuole comunicare con questa linea.",
+  },
+
+  {
+    id: 15,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -130,19 +179,7 @@ export const projects = [
       "Questo progetto videomaking presenta una collaborazione tra Mulac e Moschino, due giganti nel mondo della moda. Il video cattura un evento di lancio dove l'innovazione di Mulac incontra l'eleganza audace di Moschino, creando un'esperienza visiva ricca e affascinante. Gli outfit presentati sono esempi squisiti di design contemporaneo, con un'attenzione particolare agli abbinamenti di colori e materiali che riflettono le ultime tendenze. Un'immersione profonda nell'estetica unica che entrambi i marchi portano sul palcoscenico della moda internazionale.",
   },
   {
-    id: 12,
-    type: "local",
-    category: "fashion",
-    videoUrl:
-      "https://www.dropbox.com/scl/fi/dgokvibemer521yixosit/MULAC-Maleducata.mp4?rlkey=d240b4m8djbgyzcs0j1n9plgm&st=obdqofl2&raw=1",
-    url: "/images/MULAC.png",
-    title: "Mulac",
-    description: "Mulac maleducata",
-    detailedDescription:
-      "Nel video 'Mulac Maleducata', abbiamo esplorato un tema più audace e provocatorio, in linea con la campagna omonima di Mulac. Il video combina elementi di moda ed espressione personale, evidenziando come il brand sfida le convenzioni e celebra l'unicità. L'uso di colori intensi e composizioni audaci serve a creare un'atmosfera che è sia ribelle che fashionably chic, rispecchiando l'atteggiamento 'maleducato' che il brand vuole comunicare con questa linea.",
-  },
-  {
-    id: 13,
+    id: 16,
     type: "local",
     category: "fashion",
     videoUrl:
