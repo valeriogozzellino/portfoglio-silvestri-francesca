@@ -38,8 +38,8 @@ const Gallery = ({ dataType }) => {
 
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
                 <div className="text-slate-200 font-thin font-sans text-center">
-                  <h3 className="text-xl">{project.title}</h3>
-                  {/* <p className="text-sm">{project.description}</p> */}
+                  <h3 className="text-xl font-semibold ">{project.title}</h3>
+                  <p className="text-sm">{project.description}</p>
                 </div>
               </div>
             </Link>
@@ -81,10 +81,9 @@ const Gallery = ({ dataType }) => {
                 className="object-cover rounded"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
-                <div className="text-slate-200 font-thin font-serif text-center">
-                  <h3 className="text-xl ">{project.title}</h3>
-                  {/* <p className="text-sm">{project.description}</p> */}
-                  <p className="text-sm">scopri di più</p>
+                <div className="text-slate-200 font-thin font-sans text-center">
+                  <h3 className="text-xl font-semibold ">{project.title}</h3>
+                  <p className="text-sm">{project.description}</p>
                 </div>
               </div>
             </Link>
@@ -104,9 +103,9 @@ const Gallery = ({ dataType }) => {
                 className="object-cover rounded"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
-                <div className="text-slate-200 font-thin font-mono text-center">
-                  <h3 className="text-xl ">{project.title}</h3>
-                  <p className="text-sm">scopri di più</p>
+                <div className="text-slate-200 font-thin font-sans text-center">
+                  <h3 className="text-xl font-semibold ">{project.title}</h3>
+                  <p className="text-sm">{project.description}</p>
                 </div>
               </div>
             </Link>
@@ -127,8 +126,8 @@ const Gallery = ({ dataType }) => {
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
                 <div className="text-slate-200 font-thin font-sans text-center">
-                  <h3 className="text-xl">{project.title}</h3>
-                  <p className="text-sm">scopri di più</p>
+                  <h3 className="text-xl font-semibold ">{project.title}</h3>
+                  <p className="text-sm">{project.description}</p>
                 </div>
               </div>
             </Link>
@@ -148,9 +147,9 @@ const Gallery = ({ dataType }) => {
                 className="object-cover rounded"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
-                <div className="text-slate-200  font-thin font-sans text-center">
-                  <h3 className="text-xl">{project.title}</h3>
-                  <p className="text-sm">scopri di più</p>
+                <div className="text-slate-200 font-thin font-sans text-center">
+                  <h3 className="text-xl font-semibold ">{project.title}</h3>
+                  <p className="text-sm">{project.description}</p>
                 </div>
               </div>
             </Link>
@@ -171,8 +170,8 @@ const Gallery = ({ dataType }) => {
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
                 <div className="text-slate-200 font-thin font-sans text-center">
-                  <h3 className="text-xl ">{project.title}</h3>
-                  <p className="text-sm">scopri di più</p>
+                  <h3 className="text-xl font-semibold ">{project.title}</h3>
+                  <p className="text-sm">{project.description}</p>
                 </div>
               </div>
             </Link>

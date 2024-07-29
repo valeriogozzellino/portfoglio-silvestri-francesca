@@ -56,12 +56,12 @@ const Contacts = () => {
       );
   };
   return (
-    <div className="flex md:flex-row flex-col md:justify-between gap-6 pb-24 h-full relative">
+    <div className="flex md:flex-row flex-col md:justify-between mt-20 gap-6 pb-24 h-full relative">
       <LoadingOverlay isLoading={isLoading} />
       <Image
         alt=""
         src={imgProfile2}
-        className="w-[100%] max-w-[500px] mt-12 max-h-[300px] md:max-h-[600px] rounded-lg self-center"
+        className="w-[100%] max-w-[500px] mt-12 max-h-[300px] md:min-h-[500px] md:min-w-[600px] rounded-lg self-center"
       />
       <div className="flex flex-col justify-between w-full">
         <div className="flex flex-col gap-2 text-lg text-end font-medium">
