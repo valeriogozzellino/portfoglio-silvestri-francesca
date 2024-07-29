@@ -1,6 +1,6 @@
 export const routes = [
   {
-    title: "Home",
+    title: "Portfolio",
     href: "/",
   },
   {
