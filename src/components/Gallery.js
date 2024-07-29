@@ -19,11 +19,11 @@ const Gallery = ({ dataType }) => {
             transition: opacity 0.5s ease-in-out;
           }
           .group:hover .hover-reveal {
-            opacity: 100; // Mostra il testo al passaggio del mouse per schermi grandi
+            opacity: 100;
           }
         }
       `}</style>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-3 mb-3">
         {projects.slice(0, 2).map((project, index) => (
           <div key={index} className="relative group">
             <Link href={`/project/${project.id}`}>
@@ -37,9 +37,9 @@ const Gallery = ({ dataType }) => {
               />
 
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
-                <div className="text-white text-center">
-                  <h3 className="text-2xl font-bold">{project.title}</h3>
-                  <p className="text-sm">{project.description}</p>
+                <div className="text-slate-200 font-thin font-sans text-center">
+                  <h3 className="text-xl">{project.title}</h3>
+                  {/* <p className="text-sm">{project.description}</p> */}
                 </div>
               </div>
             </Link>
@@ -59,8 +59,8 @@ const Gallery = ({ dataType }) => {
                 className="object-cover rounded"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
-                <div className="text-white text-center">
-                  <h3 className="text-2xl font-bold">{project.title}</h3>
+                <div className="text-slate-200 font-thin font-sans text-center">
+                  <h3 className="text-xl font-semibold ">{project.title}</h3>
                   <p className="text-sm">{project.description}</p>
                 </div>
               </div>
@@ -81,9 +81,10 @@ const Gallery = ({ dataType }) => {
                 className="object-cover rounded"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
-                <div className="text-white text-center">
-                  <h3 className="text-2xl font-bold">{project.title}</h3>
-                  <p className="text-sm">{project.description}</p>
+                <div className="text-slate-200 font-thin font-serif text-center">
+                  <h3 className="text-xl ">{project.title}</h3>
+                  {/* <p className="text-sm">{project.description}</p> */}
+                  <p className="text-sm">scopri di più</p>
                 </div>
               </div>
             </Link>
@@ -103,9 +104,9 @@ const Gallery = ({ dataType }) => {
                 className="object-cover rounded"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
-                <div className="text-white text-center">
-                  <h3 className="text-2xl font-bold">{project.title}</h3>
-                  <p className="text-sm">{project.description}</p>
+                <div className="text-slate-200 font-thin font-mono text-center">
+                  <h3 className="text-xl ">{project.title}</h3>
+                  <p className="text-sm">scopri di più</p>
                 </div>
               </div>
             </Link>
@@ -125,9 +126,9 @@ const Gallery = ({ dataType }) => {
                 className="object-cover rounded"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
-                <div className="text-white text-center">
-                  <h3 className="text-2xl font-bold">{project.title}</h3>
-                  <p className="text-sm">{project.description}</p>
+                <div className="text-slate-200 font-thin font-sans text-center">
+                  <h3 className="text-xl">{project.title}</h3>
+                  <p className="text-sm">scopri di più</p>
                 </div>
               </div>
             </Link>
@@ -147,9 +148,9 @@ const Gallery = ({ dataType }) => {
                 className="object-cover rounded"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
-                <div className="text-white text-center">
-                  <h3 className="text-2xl font-bold">{project.title}</h3>
-                  <p className="text-sm">{project.description}</p>
+                <div className="text-slate-200  font-thin font-sans text-center">
+                  <h3 className="text-xl">{project.title}</h3>
+                  <p className="text-sm">scopri di più</p>
                 </div>
               </div>
             </Link>
@@ -169,9 +170,9 @@ const Gallery = ({ dataType }) => {
                 className="object-cover rounded"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
-                <div className="text-white text-center">
-                  <h3 className="text-2xl font-bold">{project.title}</h3>
-                  <p className="text-sm">{project.description}</p>
+                <div className="text-slate-200 font-thin font-sans text-center">
+                  <h3 className="text-xl ">{project.title}</h3>
+                  <p className="text-sm">scopri di più</p>
                 </div>
               </div>
             </Link>
