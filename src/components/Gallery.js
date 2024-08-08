@@ -156,8 +156,30 @@ const Gallery = ({ dataType }) => {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-3 mb-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 mb-3">
         {projects.slice(15, 17).map((project, index) => (
+          <div key={index} className="relative group">
+            <Link href={`/project/${project.id}`}>
+              <Image
+                src={project.url}
+                alt={project.title}
+                layout="responsive"
+                width={800}
+                height={700}
+                className="object-cover rounded"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-2 hover-reveal">
+                <div className="text-slate-200 font-thin font-sans text-center">
+                  <h3 className="text-xl font-semibold ">{project.title}</h3>
+                  <p className="text-sm">{project.description}</p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 mb-3">
+        {projects.slice(17, 20).map((project, index) => (
           <div key={index} className="relative group">
             <Link href={`/project/${project.id}`}>
               <Image

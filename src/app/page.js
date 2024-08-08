@@ -8,15 +8,17 @@ import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
-      window.scrollTo({
-        top: 600,
-        behavior: "smooth",
-        timer: 0.5,
-      });
+      if (window.scrollY === 0) {
+        window.scrollTo({
+          top: 600,
+          behavior: "smooth",
+        });
+      }
     }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
+
   return (
     <div className="flex flex-col justify-center w-full gap-16">
       <div className="relative mt-8 h-[55vh] md:h-[70vh]">
