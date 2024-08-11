@@ -10,7 +10,7 @@ import HomeBtn from "../HomeLink";
 
 const HamburgerButton = ({ open, setOpen }) => {
   return (
-    <div className="flex flex-row justify-between relative md:hidden p-6 z-50">
+    <div className="flex flex-row justify-between relative md:hidden p-6 z-50 text-white">
       <HomeBtn />
 
       <button
@@ -47,7 +47,7 @@ const NavList = ({ isOpen, setOpen, active }) => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
             className="flex flex-col justify-between absolute left-0 right-0 top-0 bottom-0 p-5 h-screen bg-white z-30">
-            <ul className="grid gap-2 mt-14">
+            <ul className="grid gap-2 mt-28">
               {routes.map((route, idx) => (
                 <motion.li
                   initial={{ scale: 0, opacity: 0 }}

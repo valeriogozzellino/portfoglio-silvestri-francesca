@@ -30,7 +30,7 @@ export default function Home() {
               duration={1.5}
               startDelay={0}
               staggerDuration={1}
-              className="font-bold"
+              className="font-bold text-white"
             />
           </h1>
           <h1 className="self-center">
@@ -39,7 +39,7 @@ export default function Home() {
               duration={1.5}
               startDelay={1}
               staggerDuration={0}
-              className="font-bold"
+              className="font-bold text-white"
             />
           </h1>
           <h1 className="self-end">
@@ -48,7 +48,7 @@ export default function Home() {
               duration={1.5}
               startDelay={1}
               staggerDuration={0}
-              className="font-bold"
+              className="font-bold text-white"
             />
           </h1>
         </div>
@@ -65,7 +65,7 @@ export default function Home() {
             duration={1.5}
             startDelay={2}
             staggerDuration={0}
-            className="font-bold"
+            className="font-bold text-white"
           />
         </h2>
       </div>

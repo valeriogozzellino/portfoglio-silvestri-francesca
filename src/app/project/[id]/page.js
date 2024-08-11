@@ -17,13 +17,13 @@ const Project = ({ params }) => {
           <TextGenerateEffect
             words={project.description}
             duration={1.5}
-            startDelay={1.5}
+            startDelay={0}
             staggerDuration={0}
-            className="font-bold mb-6"
+            className="font-bold mb-6 text-white"
           />
         </h3>
       </div>
-      <div className="w-full text-xl text-center md:text-xl lg:text-3xl md:px-[10%]">
+      <div className="w-full text-xl text-center md:text-xl lg:text-3xl md:px-[10%] text-white">
         <h3 className="self-center">
           <TextGenerateEffect
             words={project.title}
@@ -52,7 +52,7 @@ const Project = ({ params }) => {
           />
         )}
       </div>
-      <div className="mt-6 w-4/5 text-xl md:text-xl lg:text-2xl md:px-[10%]">
+      <div className="mt-6 w-4/5 text-xl md:text-xl lg:text-2xl md:px-[10%] text-white">
         <h5 className="self-center">
           <TextGenerateEffect
             words={project.detailedDescription}

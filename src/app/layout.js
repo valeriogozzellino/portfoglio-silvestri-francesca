@@ -15,7 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} w-screen h-screen font-sans dark`}>
+      <body
+        className={`${inter.className} w-screen h-screen font-sans bg-black`}>
         <NavMobile />
         <NavDesktop />
 

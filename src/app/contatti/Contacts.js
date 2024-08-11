@@ -56,7 +56,7 @@ const Contacts = () => {
       );
   };
   return (
-    <div className="flex md:flex-row flex-col md:justify-between mt-20 gap-6 pb-24 h-full relative">
+    <div className="flex md:flex-row flex-col md:justify-between mt-20 gap-6 pb-24 h-full relative text-white">
       <LoadingOverlay isLoading={isLoading} />
       <Image
         alt=""
@@ -138,7 +138,7 @@ const Contacts = () => {
             {isLoading ? "INVIO..." : "INVIA"}
           </motion.button>
         </form>
-        <h1 className="self-end md:relative text-5xl bottom-5 mt-4">
+        <h1 className="self-end mb-5 md:relative text-5xl bottom-5 mt-4">
           CONTATTI
         </h1>
       </div>

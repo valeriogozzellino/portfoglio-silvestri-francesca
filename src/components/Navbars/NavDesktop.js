@@ -29,7 +29,7 @@ const NavDesktop = () => {
         to={"/"}
       />
 
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row gap-4 text-white">
         <NavItem text="INSTAGRAM" to={"https://www.instagram.com/memegirvl/"} />
         <NavItem text="PORTFOLIO" to={"/"} />
         <NavItem text="CONTATTI" to={"/contatti"} />
