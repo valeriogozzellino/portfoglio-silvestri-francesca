@@ -75,7 +75,7 @@ const Footer = () => {
           © {new Date().getFullYear()} Francesca Silvestri. All rights reserved.
         </p>
         <p className="font-thin">
-          portfolio implemented by :{" "}
+          created by :{" "}
           <a href="https://www.linkedin.com/in/valerio-gozzellino-36ba65240/">
             Valerio Gozzellino -{" "}
           </a>
