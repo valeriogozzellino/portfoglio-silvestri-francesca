@@ -5,6 +5,7 @@ import LandingCarousel from "@/components/Carousels/LandingCarousel";
 import Gallery from "@/components/Gallery";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
 import { useEffect } from "react";
+import Footer from "../components/Footer";
 export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -84,6 +85,7 @@ export default function Home() {
       </div> */}
       {/* <Gallery dataType={1} /> */}
       {/* <LandingCarousel dataType={1} /> */}
+      <Footer />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import crow from "./crow.webp";
 import imgProfile from "./imgProfile.webp";
 import imgProfile2 from "./imgProfile2.jpg";
 import { motion } from "framer-motion";
+import Footer from "@/components/Footer";
 import LoadingOverlay from "@/components/LoadingOverlay";
 const Contacts = () => {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ const Contacts = () => {
       from_name: formData.nome,
       from_email: formData.email,
       message: formData.contenuto,
-      to_email: "gozzellinovalerio@gmail.com",
+      to_email: "fsilvestrivideo@gmail.com",
       subject: "richiesta contatti sito",
     };
     emailjs
@@ -61,7 +62,7 @@ const Contacts = () => {
       <Image
         alt=""
         src={imgProfile2}
-        className="w-[100%] max-w-[500px] mt-12 max-h-[300px] md:min-h-[500px] md:min-w-[600px] rounded-lg self-center"
+        className="w-[100%] image-zoom max-w-[500px] mt-12 max-h-[300px] md:min-h-[500px] md:min-w-[600px] rounded-lg self-center"
       />
       <div className="flex flex-col justify-between w-full">
         <div className="flex flex-col gap-2 text-lg text-end font-medium">
@@ -147,6 +148,7 @@ const Contacts = () => {
           Email inviata con successo!
         </div>
       )}
+      <Footer />
     </div>
   );
 };

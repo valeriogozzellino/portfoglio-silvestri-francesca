@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
 import "../../globals.css";
 import YouTubePlayer from "@/components/YouTubePlayer";
-
+import Footer from "@/components/Footer";
 const Project = ({ params }) => {
   const project = projects.find((p) => p.id == params.id);
   const imgsProject = imgProjects.filter((img) => img.idProject == params.id);
@@ -76,6 +76,7 @@ const Project = ({ params }) => {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 };
