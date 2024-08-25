@@ -5,6 +5,9 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  images: {
+    domains: ["ucfffcaa473e62c28703802fc81a.previews.dropboxusercontent.com"],
+  },
   theme: {
     extend: {
       backgroundImage: {

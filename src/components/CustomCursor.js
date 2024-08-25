@@ -45,7 +45,7 @@ function CustomCursor() {
         width: `${flareSize}px`,
         height: `${flareSize}px`,
         backgroundColor: "grey",
-        position: "absolute",
+        position: "fixed", // Use fixed positioning instead of absolute
         borderRadius: "50%",
         pointerEvents: "none", // Prevent the cursor from blocking other events
         transform: "translate(-50%, -50%)", // Center the cursor

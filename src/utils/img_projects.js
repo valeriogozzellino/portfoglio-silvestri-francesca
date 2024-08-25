@@ -72,4 +72,16 @@ export const imgProjects = [
     url: "/images/fulminacci4.png",
     alt: "Fulminacci",
   },
+  {
+    id: 12,
+    idProject: 13,
+    url: "/images/peggy3.jpg",
+    alt: "peggy",
+  },
+  {
+    id: 13,
+    idProject: 13,
+    url: "/images/peggy2.jpg",
+    alt: "peggy",
+  },
 ];

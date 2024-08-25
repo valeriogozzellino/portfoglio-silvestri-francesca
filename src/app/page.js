@@ -42,7 +42,7 @@ export default function Home() {
           transition={{ duration: 1, ease: "easeInOut", delay: 1 }}>
           <img
             src="../images/logo.png"
-            alt="immagineiniziale"
+            alt="first image"
             className="h-48 image-first w-fit"
           />
         </motion.div>

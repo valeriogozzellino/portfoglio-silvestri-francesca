@@ -122,18 +122,6 @@ export const projects = [
     type: "local",
     category: "music",
     videoUrl:
-      "https://www.dropbox.com/scl/fo/7391r7n9j2cze89ucfjb1/AOQcnXn_25LItfYoV_uARW4?rlkey=7oqgn4govrcs0wsn7e9ia62oo&st=wpivulc9&raw=1",
-    url: "/images/CALCUTTA.jpg",
-    title: "CALCUTTA",
-    description: "CALCUTTA (AFTERMOVIE)",
-    detailedDescription:
-      "il progetto di videomaking per Calcutta è stato un'immersione nella sua musica e nel suo mondo. Attraverso un montaggio dinamico e una narrazione visiva coinvolgente, il video cattura l'essenza del suo stile unico e della sua presenza scenica",
-  },
-  {
-    id: 12,
-    type: "local",
-    category: "music",
-    videoUrl:
       "https://cdn-prod-ccv.adobe.com/BrxjdsVkaQ6/rend/BrxjdsVkaQ6_576.mp4?hdnts=st%3D1722240113%7Eexp%3D1722499313%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FBrxjdsVkaQ6%2Frend%2F*%21%2Fi%2FBrxjdsVkaQ6%2Frend%2F*%21%2FBrxjdsVkaQ6%2Frend%2F*%21%2FBrxjdsVkaQ6%2Fimage%2F*%21%2FBrxjdsVkaQ6%2Fcaptions%2F*%7Ehmac%3D7ff441471751c1d4cf9a9e365909f72976c64b54ed003c707b0622556c139783",
     url: "/images/franco126.jpg",
     title: "FRANCO126",
@@ -141,7 +129,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 13,
+    id: 12,
     type: "local",
     category: "music",
     videoUrl:
@@ -152,18 +140,18 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 14,
+    id: 13,
     type: "local",
     category: "music",
     videoUrl:
-      "https://cdn-prod-ccv.adobe.com/6S6tyTkN3pL/rend/6S6tyTkN3pL_576.mp4?hdnts=st%3D1723106566%7Eexp%3D1723365766%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2F6S6tyTkN3pL%2Frend%2F*%21%2Fi%2F6S6tyTkN3pL%2Frend%2F*%21%2F6S6tyTkN3pL%2Frend%2F*%21%2F6S6tyTkN3pL%2Fimage%2F*%21%2F6S6tyTkN3pL%2Fcaptions%2F*%7Ehmac%3D87b21ca639578e44ebbd9d19b65b37037668c6eccb058c944805240b8384d892",
+      "https://www.dropbox.com/scl/fi/c04zxudvu9zlstdp79xw6/DEF_1.MOV?rlkey=7p16kcvg378de6dqqthbtw4bi&st=u8i4uo9x&raw=1",
     url: "/images/peggy.jpg",
     title: "Peggy Gou - Panorama Festival",
     description: "Peggy Gou - Panorama Festival",
     detailedDescription: "",
   },
   {
-    id: 15,
+    id: 14,
     type: "local",
     category: "music",
     videoUrl:
@@ -174,7 +162,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 16,
+    id: 15,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -187,7 +175,7 @@ export const projects = [
   },
 
   {
-    id: 17,
+    id: 16,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -199,7 +187,7 @@ export const projects = [
       "Questo progetto videomaking presenta una collaborazione tra Mulac e Moschino, due giganti nel mondo della moda. Il video cattura un evento di lancio dove l'innovazione di Mulac incontra l'eleganza audace di Moschino, creando un'esperienza visiva ricca e affascinante. Gli outfit presentati sono esempi squisiti di design contemporaneo, con un'attenzione particolare agli abbinamenti di colori e materiali che riflettono le ultime tendenze. Un'immersione profonda nell'estetica unica che entrambi i marchi portano sul palcoscenico della moda internazionale.",
   },
   {
-    id: 18,
+    id: 17,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -211,7 +199,7 @@ export const projects = [
       "Il video 'Max & Co' è un'ode alla femminilità e all'eleganza, con un tocco di modernità e audacia. Il video cattura l'essenza del marchio, con abiti che esprimono una femminilità forte e indipendente. L'uso di colori tenui e materiali di alta qualità crea un'atmosfera di raffinatezza e stile, mentre le linee pulite e i tagli precisi conferiscono un tocco di modernità e freschezza. Un'ode alla bellezza e alla forza delle donne.",
   },
   {
-    id: 19,
+    id: 18,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -223,7 +211,7 @@ export const projects = [
       "il progetto di videomaking per Moschino e Mulac è stato un'immersione nel mondo della moda e del design. Attraverso un montaggio dinamico e una narrazione visiva coinvolgente, il video cattura l'essenza del loro stile unico e della loro presenza scenica",
   },
   {
-    id: 20,
+    id: 19,
     type: "local",
     category: "fashion",
     videoUrl:
