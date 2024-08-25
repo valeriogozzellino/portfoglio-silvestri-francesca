@@ -48,7 +48,7 @@ export default function Home() {
         </motion.div>
       )}
 
-      <div className="relative mt-8 h-[55vh] md:h-[70vh]">
+      <div className="relative mt-11 h-[55vh] md:h-[70vh]">
         <div className="flex flex-col justify-end h-full text-4xl md:text-6xl lg:text-8xl md:px-[10%]">
           <h1 className="self-start">
             <TextGenerateEffect
