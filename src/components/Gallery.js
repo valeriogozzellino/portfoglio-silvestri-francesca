@@ -2,7 +2,7 @@ import { projects } from "@/utils/projects";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
-
+import { motion } from "framer-motion";
 const Gallery = ({ dataType }) => {
   let dataProjects;
   if (dataType === 0) {
