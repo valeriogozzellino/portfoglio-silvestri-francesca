@@ -2,40 +2,47 @@
 
 import React, { useState, useEffect } from "react";
 
-// This functional component represents a custom cursor with a flare effect.
 function CustomCursor() {
-  // State to track the current cursor position (x, y coordinates).
   const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  // State to track whether the cursor is over a clickable element.
   const [isPointer, setIsPointer] = useState(false);
+  const [showCursor, setShowCursor] = useState(true);
 
-  // Event handler for the mousemove event.
   const handleMouseMove = (e) => {
-    // Update the cursor position based on the mouse coordinates.
     setPosition({ x: e.clientX, y: e.clientY });
-
-    // Get the target element that the cursor is currently over.
     const target = e.target;
-
-    // Check if the cursor is over a clickable element by inspecting the cursor style.
     setIsPointer(
       window.getComputedStyle(target).getPropertyValue("cursor") === "pointer"
     );
   };
 
-  // Set up an effect to add and remove the mousemove event listener.
   useEffect(() => {
+    // Check window width to determine if the cursor should be shown
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setShowCursor(false);
+      } else {
+        setShowCursor(true);
+      }
+    };
+
+    // Set the initial state
+    handleResize();
+
     window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("resize", handleResize);
+
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("resize", handleResize);
     };
-  }, []); // The empty dependency array ensures that this effect runs only once on mount.
+  }, []);
 
-  // Calculate the size of the flare based on whether the cursor is over a clickable element.
+  if (!showCursor) {
+    return null; // Do not render the cursor on mobile
+  }
+
   const flareSize = isPointer ? 0 : 30;
 
-  // Render the custom cursor element with dynamic styles based on cursor state.
   return (
     <div
       className={`flare ${isPointer ? "pointer" : ""}`}
@@ -45,14 +52,13 @@ function CustomCursor() {
         width: `${flareSize}px`,
         height: `${flareSize}px`,
         backgroundColor: "grey",
-        position: "fixed", // Use fixed positioning instead of absolute
+        position: "fixed",
         borderRadius: "50%",
-        pointerEvents: "none", // Prevent the cursor from blocking other events
-        transform: "translate(-50%, -50%)", // Center the cursor
-        zIndex: 9999, // Ensure it appears above other elements
+        pointerEvents: "none",
+        transform: "translate(-50%, -50%)",
+        zIndex: 9999,
       }}></div>
   );
 }
 
-// Export the FlareCursor component to be used in other parts of the application.
 export default CustomCursor;
