@@ -4,6 +4,7 @@ import NavDesktop from "@/components/Navbars/NavDesktop";
 import CustomCursor from "@/components/CustomCursor";
 
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,6 @@ export default function RootLayout({ children }) {
         <NavDesktop />
 
         <CustomCursor />
-
         <main className="w-full h-full px-10">{children}</main>
       </body>
     </html>

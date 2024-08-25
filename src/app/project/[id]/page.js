@@ -52,7 +52,7 @@ const Project = ({ params }) => {
           />
         )}
       </div>
-      <div className="mt-6 w-4/5 text-xl md:text-xl lg:text-2xl md:px-[10%] text-white">
+      {/* <div className="mt-6 w-4/5 text-xl md:text-xl lg:text-2xl md:px-[10%] text-white">
         <h5 className="self-center">
           <TextGenerateEffect
             words={project.detailedDescription}
@@ -62,7 +62,7 @@ const Project = ({ params }) => {
             className="text-center mb-6"
           />
         </h5>
-      </div>
+      </div> */}
       <div className="mt-6 mb-5 w-4/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
         {imgsProject.map((img, index) => (
           <div className="p-2" key={index}>
