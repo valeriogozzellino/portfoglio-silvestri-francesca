@@ -15,7 +15,6 @@ const ScreenSaver = () => {
         alt="first image"
         className="h-60 image-first w-fit"
       />
-      <p className="mt-12 font-b text-2xl">Scrool to start...</p>
     </motion.div>
   );
 };
