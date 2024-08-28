@@ -23,9 +23,10 @@ const NavDesktop = () => {
   return (
     <nav className="hidden md:flex flex-row w-full justify-between fixed bg-black z-10 p-6">
       <NavItem
-        isImage={true}
-        imgSrc="/images/logo.png"
-        imgAlt="Logo"
+        // isImage={true}
+        // imgSrc="/images/logo.png"
+        // imgAlt="Logo"
+        text="DIRECTED BY FRANCESCA SILVESTRI"
         to={"/"}
       />
 

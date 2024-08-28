@@ -175,3 +175,35 @@ body {
     transform: scale(1.12);
   }
 }
+
+@keyframes floatDown {
+  0% {
+    transform: translateY(-90px);
+  }
+  50% {
+    transform: translateY(90px);
+  }
+  100% {
+    transform: translateY(-90px);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(90px);
+  }
+  50% {
+    transform: translateY(-90px);
+  }
+  100% {
+    transform: translateY(90px);
+  }
+}
+
+.animate-float-down {
+  animation: floatDown 20s ease-in-out infinite;
+}
+
+.animate-float-up {
+  animation: floatUp 20s ease-in-out infinite;
+}
