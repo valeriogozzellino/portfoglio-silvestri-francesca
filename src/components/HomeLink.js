@@ -9,7 +9,10 @@ const HomeBtn = () => {
   return (
     <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
       <Link href="/">
-        <Image src={logo} alt="Francesca Silvestri" width={70} height={70} />
+        <p className="text-wrap text-xs">
+          DIRECTED BY <br /> FRANCESCA SILVESTRI
+        </p>
+        {/* <Image src={logo} alt="Francesca Silvestri" width={70} height={70} /> */}
       </Link>
     </motion.span>
   );
