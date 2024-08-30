@@ -19,21 +19,21 @@ const BgImageMobile = () => {
   }, []);
 
   return (
-    <div className="absolute w-full h-full inset-0 -z-[1]">
+    <div className="absolute w-full h-[100vh] inset-0 -z-[1]">
       <div
         id="imgTopLeft"
-        className="absolute top-0 left-0 flex items-center justify-center w-[200px] h-[400px] md:w-[300px] md:h-[600px]"
+        className="absolute top-0 left-0 flex items-center justify-center w-[200px] h-[300px] md:w-[300px] md:h-[600px]"
         style={{ transform: `translateY(${scrollPosition * 0.2}px)` }}>
         <Image
           src="/images/fulminacci4.png"
           alt="image top left"
-          width={300}
-          height={400}
+          width={400}
+          height={500}
         />
       </div>
       <div
         id="imgTopRight"
-        className="absolute top-0 right-0 flex items-center justify-center w-[200px] h-[400px] md:w-[300px] md:h-[600px]"
+        className="absolute top-0 right-0 flex items-center justify-center w-1/2 h-1/2 md:w-[300px] md:h-[600px]"
         style={{ transform: `translateY(-${scrollPosition * 0.2}px)` }}>
         <Image
           src="/images/marracash2.png"
@@ -44,7 +44,7 @@ const BgImageMobile = () => {
       </div>
       <div
         id="imgBottomLeft"
-        className="absolute bottom-0 left-0 flex items-center justify-center w-[200px] h-[400px] md:w-[300px] md:h-[600px]"
+        className="absolute bottom-0 left-0 flex items-center justify-center w-1/2 h-1/2 md:w-[300px] md:h-[600px]"
         style={{ transform: `translateY(${scrollPosition * 0.2}px)` }}>
         <Image
           src="/images/IMG_0185.jpg"
@@ -55,13 +55,13 @@ const BgImageMobile = () => {
       </div>
       <div
         id="imgBottomRight"
-        className="absolute bottom-0 right-0 flex items-center justify-center w-[200px] h-[400px] md:w-[300px] md:h-[600px]"
+        className="absolute bottom-0 right-0 flex items-center justify-center w-[200px] h-[300px] md:w-[300px] md:h-[600px]"
         style={{ transform: `translateY(-${scrollPosition * 0.2}px)` }}>
         <Image
           src="/images/madame3.png"
           alt="image bottom right"
-          width={300}
-          height={400}
+          width={400}
+          height={500}
         />
       </div>
     </div>
