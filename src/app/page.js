@@ -7,8 +7,9 @@ import LandingCarousel from "@/components/Carousels/LandingCarousel";
 import Gallery from "@/components/Gallery";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
 import Footer from "../components/Footer";
-import BgImageTop from "@/components/BgImageTop";
+import BgImageTop from "@/components/HomeBgImage/BgImageTop";
 import ScreenSaver from "@/components/ScreenSaver";
+import BgImageMobile from "@/components/HomeBgImage/BgImageMobile";
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
@@ -25,8 +26,13 @@ export default function Home() {
             className="h-20 w-1/2 md:w-auto md:h-48 "
           />
         </div>
-        <BgImageTop />
-        {/* <CardsCarousel /> */}
+        <div className="hidden md:block">
+          <BgImageTop />
+        </div>
+        <div className="block md:hidden">
+          <BgImageMobile />
+          {/* <CardsCarousel /> */}
+        </div>
       </div>
 
       {/* <HorizontalCarousel /> */}
