@@ -22,10 +22,14 @@ const BgImageMobile = () => {
     <div className="absolute w-full h-[100vh] inset-0 -z-[1]">
       <div
         id="imgTopLeft"
-        className="absolute top-0 left-0 flex items-center justify-center w-[200px] h-[300px] md:w-[300px] md:h-[600px]"
-        style={{ transform: `translateY(${scrollPosition * 0.2}px)` }}>
+        className="absolute top-0 left-0 flex items-center justify-center w-[400px] h-[200px] z-[2]"
+        style={{
+          transform: `translateY(${scrollPosition * 0.2}px)`,
+          marginTop: "50px",
+          marginLeft: "50px",
+        }}>
         <Image
-          src="/images/fulminacci4.png"
+          src="/images/coverHome/CAPOPLAZA.jpg"
           alt="image top left"
           width={400}
           height={500}
@@ -33,34 +37,44 @@ const BgImageMobile = () => {
       </div>
       <div
         id="imgTopRight"
-        className="absolute top-0 right-0 flex items-center justify-center w-1/2 h-1/2 md:w-[300px] md:h-[600px]"
-        style={{ transform: `translateY(-${scrollPosition * 0.2}px)` }}>
+        className="absolute top-60 -right-20 flex items-center justify-center w-[400px] h-[200px] z-[3]"
+        style={{
+          transform: `translateY(-${scrollPosition * 0.2}px)`,
+          marginRight: "100px",
+        }}>
         <Image
-          src="/images/marracash2.png"
+          src="/images/coverHome/LAZZA.jpg"
           alt="image top right"
-          width={100}
+          width={400}
           height={200}
         />
       </div>
       <div
         id="imgBottomLeft"
-        className="absolute bottom-0 left-0 flex items-center justify-center w-1/2 h-1/2 md:w-[300px] md:h-[600px]"
-        style={{ transform: `translateY(${scrollPosition * 0.2}px)` }}>
+        className="absolute bottom-36 left-0 flex items-center justify-center w-[400px] h-[100px] z-[0]"
+        style={{
+          transform: `translateY(${scrollPosition * 0.2}px)`,
+          marginBottom: "50px",
+          marginLeft: "50px",
+        }}>
         <Image
-          src="/images/IMG_0185.jpg"
+          src="/images/coverHome/GEOLIER.jpg"
           alt="image bottom left"
-          width={100}
-          height={200}
+          width={400}
+          height={20}
         />
       </div>
       <div
         id="imgBottomRight"
-        className="absolute bottom-0 right-0 flex items-center justify-center w-[200px] h-[300px] md:w-[300px] md:h-[600px]"
-        style={{ transform: `translateY(-${scrollPosition * 0.2}px)` }}>
+        className="absolute bottom-0 -right-36 flex items-center justify-center w-[400px] h-[100px] z-[1]"
+        style={{
+          transform: `translateY(-${scrollPosition * 0.2}px)`,
+          marginRight: "150px",
+        }}>
         <Image
-          src="/images/madame3.png"
+          src="/images/coverHome/NIKYSAVAGE.jpg"
           alt="image bottom right"
-          width={400}
+          width={500}
           height={500}
         />
       </div>

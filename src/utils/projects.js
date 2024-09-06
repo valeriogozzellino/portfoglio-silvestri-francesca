@@ -26,10 +26,10 @@ export const projects = [
     type: "local",
     category: "music",
     videoUrl:
-      "https://www.dropbox.com/scl/fi/kv77ldvy3raz98bamlzcj/DEF-PRORES.mov?rlkey=55bhux05mumcq37zaxsm3hmv9&raw=1",
+      "https://www.dropbox.com/scl/fi/kv77ldvy3raz98bamlzcj/DEF-PRORES.mov?rlkey=55bhux05mumcq37zaxsm3hmv9&st=qy20aoip&raw=1",
     url: "/images/MARRAGEDDON.jpg",
     title: "MARRACASH - GUE",
-    description: "MARRAGHEDDON (aftermovie)",
+    description: "MARRAGHEDDON (AFTERMOVIE)",
     detailedDescription:
       "In questo affascinante progetto di videomaking, ho avuto l'opportunità di collaborare con Marracash, una delle icone più influenti della scena rap italiana. Attraverso una narrazione visiva coinvolgente, il video mette in luce la profondità dei testi di Marracash e la sua intensa espressività.",
   },
@@ -40,8 +40,8 @@ export const projects = [
     videoUrl:
       "https://www.dropbox.com/scl/fi/vpnkzuhhne5xie91s2bn6/MERCH_EXP_MERCH_2.mov?rlkey=zkeeufqtwny9s1dkf7tp1jr9t&st=igirkrsg&raw=1",
     url: "/images/merchMecna.png",
-    title: "MECNA",
-    description: "MERCANDISING di MECNA ",
+    title: "MERCHANDISING",
+    description: "MECNA - MERCH ",
     detailedDescription:
       "Questo videoclip promozionale per il merchandising di Mecna unisce la moda alla musica, enfatizzando il legame tra l'identità visiva del brand e l'estetica dell'artista. Il focus visivo sul merchandising è abbinato a un sottofondo musicale che accentua il legame tra l'artista e i suoi fan, usando un montaggio visivo che cattura l'essenza del marchio Mecna attraverso uno stile fresco e giovanile.",
   },
@@ -53,7 +53,7 @@ export const projects = [
       "https://www.dropbox.com/scl/fi/p4rsmra6cinypxumbccxb/pinguini-con-color-social.mp4?rlkey=fsbwfdm2izfckamkbraf93x7t&raw=1",
     url: "/images/PINGUINI.jpeg",
     title: "PINGUINI",
-    description: "PINGUINI TATTICI NUCLEARI (aftermovie)",
+    description: "PINGUINI TATTICI NUCLEARI (AFTERMOVIE)",
     detailedDescription:
       "Collaborare con i Pinguini Tattici Nucleari in questo progetto di videomaking è stata un'esperienza straordinariamente vivace e colorata. Il gruppo, noto per il suo stile unico e le esibizioni energiche, ha portato una ventata di freschezza e originalità sul set. ",
   },
@@ -65,7 +65,7 @@ export const projects = [
       "https://www.dropbox.com/scl/fi/kez1whrivd4izjg9v09at/memegirvl_Fibra_Pescara080823.mov?rlkey=3wclcy0t8l6uu215oag6xprma&raw=1",
     url: "/images/FABRIFIBRA.jpg",
     title: "FABRI FIBRA",
-    description: "FABRI FIBRA a Pescara (aftermovie)",
+    description: "FABRI FIBRA a Pescara (AFTERMOVIE)",
     detailedDescription:
       "Questo progetto videomaking con Fabri Fibra ha esplorato le complesse sfaccettature del suo essere artista rap di punta in Italia. Attraverso un'intensa narrazione visiva, il video si addentra nelle profonde riflessioni e nella critica sociale che contraddistinguono i testi di Fibra. ",
   },
@@ -77,7 +77,7 @@ export const projects = [
       "https://www.dropbox.com/scl/fi/dk6mliollbn65bctljpg2/Madame_V5_Roma.mov?rlkey=lb7q2gs7wkrvritu0y4qe0zng&raw=1",
     url: "/images/MADAME.jpg",
     title: "MADAME",
-    description: "MADAME (aftermovie)",
+    description: "MADAME (AFTERMOVIE)",
     detailedDescription:
       "Recentemente ho avuto il privilegio di lavorare alla realizzazione di un progetto di videomaking dedicato a una delle figure più affascinanti della scena musicale italiana: Madame. Questo progetto ha catturato l'essenza di una performance unica, dove Madame, con il suo inconfondibile carisma, si è posizionata al centro delle attenzioni, incantando il pubblico e la camera con la sua presenza scenica.",
   },
@@ -133,7 +133,7 @@ export const projects = [
     type: "local",
     category: "music",
     videoUrl:
-      "https://cdn-prod-ccv.adobe.com/3S_wxj89Mdb/rend/3S_wxj89Mdb_576.mp4?hdnts=st%3D1723105063%7Eexp%3D1723364263%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2F3S_wxj89Mdb%2Frend%2F*%21%2Fi%2F3S_wxj89Mdb%2Frend%2F*%21%2F3S_wxj89Mdb%2Frend%2F*%21%2F3S_wxj89Mdb%2Fimage%2F*%21%2F3S_wxj89Mdb%2Fcaptions%2F*%7Ehmac%3Da903aa90061988c0817229b8bc103defaf4e84321e9d111dec90c49391347bc0",
+      "https://www.dropbox.com/scl/fi/v2lvm9odjw5eh5vvvf0fi/AFTERMOVIE_DEF.mov?rlkey=nopqhnahmaij0wcdjppyf0ous&st=2dngd057&raw=1",
     url: "/images/summersad.jpg",
     title: "SUMMERSAD FESTIVAL",
     description: "SUMMERSAD FESTIVAL",
@@ -177,6 +177,62 @@ export const projects = [
   {
     id: 16,
     type: "local",
+    category: "music",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/y7kg5hfeyr5uwst1gxdyv/EMIS_RECAP.mp4?rlkey=y5kzqnk6uljtbg0cohelwuz7l&st=cjfvyluz&raw=1",
+    url: "/images/coverProg/EMISKILLA.jpg",
+    title: "EMIS KILLA",
+    description: "",
+    detailedDescription: "",
+  },
+  {
+    id: 17,
+    type: "local",
+    category: "music",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/5tmdoqqwda8z1rf8s1b5c/RELEASE_ANNA_V1.mp4?rlkey=ib2aycylfwnzq28rse24fm4c9&st=g333hse5&raw=1",
+    url: "/images/MulacMoschino.png",
+    title: "ANNA PEPE - RELEASE PARTY",
+    description: "ANNA PEPE - RELEASE PARTY",
+    detailedDescription: "",
+  },
+  {
+    id: 18,
+    type: "local",
+    category: "music",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/8gjrflb0y7n0ml5e0gc5o/2_-export.mp4?rlkey=jlr5p0bepamx3lz56sbpk203o&e=1&st=88heixv6&raw=1",
+    url: "/images/coverProg/ELODIE.JPG",
+    title: "Elodie evento Piazza San Babila (MI)",
+    description: "",
+    detailedDescription: "",
+  },
+
+  {
+    id: 19,
+    type: "local",
+    category: "music",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/403d5rg9hihe5wgw95wde/Mulaclogonero1.mp4?rlkey=m4tethaxevnwmpsh30kvu63jp&st=4gfdryxq&raw=1",
+    url: "/images/coverProg/MECNA.JPG",
+    title: "Mecna360 AFTERMOVIE",
+    description: "",
+    detailedDescription: "",
+  },
+  {
+    id: 20,
+    type: "local",
+    category: "music",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/403d5rg9hihe5wgw95wde/Mulaclogonero1.mp4?rlkey=m4tethaxevnwmpsh30kvu63jp&st=4gfdryxq&raw=1",
+    url: "/images/coverProg/CALCUTTA.jpg",
+    title: "Calcutta (IGS LIVE) Tour Estivo “RELAX”",
+    description: "",
+    detailedDescription: "",
+  },
+  {
+    id: 21,
+    type: "local",
     category: "fashion",
     videoUrl:
       "https://www.dropbox.com/scl/fi/403d5rg9hihe5wgw95wde/Mulaclogonero1.mp4?rlkey=m4tethaxevnwmpsh30kvu63jp&st=4gfdryxq&raw=1",
@@ -187,7 +243,7 @@ export const projects = [
       "Questo progetto videomaking presenta una collaborazione tra Mulac e Moschino, due giganti nel mondo della moda. Il video cattura un evento di lancio dove l'innovazione di Mulac incontra l'eleganza audace di Moschino, creando un'esperienza visiva ricca e affascinante. Gli outfit presentati sono esempi squisiti di design contemporaneo, con un'attenzione particolare agli abbinamenti di colori e materiali che riflettono le ultime tendenze. Un'immersione profonda nell'estetica unica che entrambi i marchi portano sul palcoscenico della moda internazionale.",
   },
   {
-    id: 17,
+    id: 22,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -199,7 +255,7 @@ export const projects = [
       "Il video 'Max & Co' è un'ode alla femminilità e all'eleganza, con un tocco di modernità e audacia. Il video cattura l'essenza del marchio, con abiti che esprimono una femminilità forte e indipendente. L'uso di colori tenui e materiali di alta qualità crea un'atmosfera di raffinatezza e stile, mentre le linee pulite e i tagli precisi conferiscono un tocco di modernità e freschezza. Un'ode alla bellezza e alla forza delle donne.",
   },
   {
-    id: 18,
+    id: 23,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -211,7 +267,7 @@ export const projects = [
       "il progetto di videomaking per Moschino e Mulac è stato un'immersione nel mondo della moda e del design. Attraverso un montaggio dinamico e una narrazione visiva coinvolgente, il video cattura l'essenza del loro stile unico e della loro presenza scenica",
   },
   {
-    id: 19,
+    id: 24,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -219,6 +275,17 @@ export const projects = [
     url: "/images/mariasolePollioMax&Co.jpeg",
     title: "MAX&CO MARIASOLE POLLIO",
     description: "MAX&CO MARIASOLE POLLIO",
+    detailedDescription: "",
+  },
+  {
+    id: 25,
+    type: "local",
+    category: "music",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/z0k481dwqgfbvu2fq4ty8/MaxeCo_color3-exp_3.mov?rlkey=jv2atjv2vti1r3p5bxpf9m4ah&st=x02b1ao3&raw=1",
+    url: "/images/coverProg/REDVALLEY.jpg",
+    title: "Red Valley Festival ",
+    description: "Red Valley Festival (Operatrice Video)",
     detailedDescription: "",
   },
 ];

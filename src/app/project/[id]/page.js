@@ -1,5 +1,5 @@
 import { projects } from "@/utils/projects";
-import { imgProjects } from "@/utils/img_projects";
+import { videoProjects } from "@/utils/video_projects";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
@@ -8,7 +8,9 @@ import YouTubePlayer from "@/components/YouTubePlayer";
 import Footer from "@/components/Footer";
 const Project = ({ params }) => {
   const project = projects.find((p) => p.id == params.id);
-  const imgsProject = imgProjects.filter((img) => img.idProject == params.id);
+  const videosProject = videoProjects.filter(
+    (video) => video.idProject == params.id
+  );
 
   return (
     <div className="flex flex-col w-full justify-center  items-center">
@@ -63,15 +65,16 @@ const Project = ({ params }) => {
           />
         </h5>
       </div> */}
-      <div className="mt-6 mb-5 w-4/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
-        {imgsProject.map((img, index) => (
-          <div className="p-2" key={index}>
-            <Image
-              src={img.url}
-              alt={img.alt}
-              className="rounded-lg"
-              width={700}
-              height={500}
+      <div className="mt-6 mb-5 w-4/5  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center">
+        {videosProject.map((video, index) => (
+          <div className="p-2 flex flex-col items-center" key={index}>
+            {/* <h2 className="text-center">{video.title}</h2> */}
+            <h3 className="text-center">{video.subtitle}</h3>
+            <video
+              src={video.url}
+              controls
+              preload="auto"
+              style={{ width: "40vh", height: "50vh" }}
             />
           </div>
         ))}
