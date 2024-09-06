@@ -41,7 +41,7 @@ const Gallery = ({ dataType }) => {
       <ProjectGroup projects={projects.slice(15, 17)} columns={2} />
       <ProjectGroup projects={projects.slice(17, 20)} columns={3} />
       <ProjectGroup projects={projects.slice(20, 22)} columns={2} />
-      <ProjectGroup projects={projects.slice(22, 24)} columns={3} />
+      <ProjectGroup projects={projects.slice(22, 25)} columns={3} />
     </div>
   );
 };

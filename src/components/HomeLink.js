@@ -2,8 +2,6 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import logo from "/public/images/logo.png"; // Assicurati che il percorso sia corretto
 
 const HomeBtn = () => {
   return (
@@ -12,7 +10,6 @@ const HomeBtn = () => {
         <p className="text-wrap text-xs">
           DIRECTED BY <br /> FRANCESCA SILVESTRI
         </p>
-        {/* <Image src={logo} alt="Francesca Silvestri" width={70} height={70} /> */}
       </Link>
     </motion.span>
   );

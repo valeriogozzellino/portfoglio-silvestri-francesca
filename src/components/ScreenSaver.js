@@ -11,7 +11,7 @@ const ScreenSaver = () => {
       animate={{ y: "-100%" }}
       transition={{ duration: 1, ease: "easeInOut", delay: 1 }}>
       <img
-        src="../images/logo.png"
+        src="/images/loghi/LOGO.png"
         alt="first image"
         className="h-60 image-first w-fit"
       />

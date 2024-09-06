@@ -20,9 +20,9 @@ export default function Home() {
       <div className="relative mt-11 h-[100vh] md:h-[80vh]">
         <div className="flex flex-col justify-center items-center h-full text-4xl md:text-6xl lg:text-8xl">
           <Image
-            src="/images/logo.png"
+            src="/images/loghi/LOGO.png"
             alt="first image"
-            className="h-20 w-1/2 md:w-auto md:h-48 "
+            className="h-auto w-auto md:w-auto md:h-56 "
             width={700}
             height={700}
           />

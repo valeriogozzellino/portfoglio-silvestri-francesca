@@ -22,7 +22,7 @@ const BgImageMobile = () => {
     <div className="absolute w-full h-[100vh] inset-0 -z-[1]">
       <div
         id="imgTopLeft"
-        className="absolute top-0 left-0 flex items-center justify-center w-[400px] h-[200px] z-[2]"
+        className="absolute top-0 left-0 flex items-center justify-center w-[300px] h-[200px] z-[2]"
         style={{
           transform: `translateY(${scrollPosition * 0.2}px)`,
           marginTop: "50px",
@@ -51,7 +51,7 @@ const BgImageMobile = () => {
       </div>
       <div
         id="imgBottomLeft"
-        className="absolute bottom-36 left-0 flex items-center justify-center w-[400px] h-[100px] z-[0]"
+        className="absolute bottom-36 left-0 flex items-center justify-center w-[300px] h-[100px] z-[0]"
         style={{
           transform: `translateY(${scrollPosition * 0.2}px)`,
           marginBottom: "50px",
@@ -61,7 +61,7 @@ const BgImageMobile = () => {
           src="/images/coverHome/GEOLIER.jpg"
           alt="image bottom left"
           width={400}
-          height={20}
+          height={200}
         />
       </div>
       <div

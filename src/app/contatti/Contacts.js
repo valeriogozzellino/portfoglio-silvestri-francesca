@@ -2,9 +2,6 @@
 import Image from "next/image";
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import crow from "./crow.webp";
-import imgProfile from "./imgProfile.webp";
-import imgProfile2 from "./imgProfile2.jpg";
 import { motion } from "framer-motion";
 import Footer from "@/components/Footer";
 import LoadingOverlay from "@/components/LoadingOverlay";
@@ -67,7 +64,9 @@ const Contacts = () => {
       <div className="flex md:flex-row flex-col md:justify-between gap-6 pb-24 flex-grow">
         <Image
           alt=""
-          src={imgProfile2}
+          src="/images/contactImg/FS1.JPG"
+          width={1000}
+          height={1000}
           className="w-[100%] image-zoom max-w-[500px] mt-12 max-h-[300px] md:min-h-[500px] md:min-w-[600px] rounded-lg self-center"
         />
         <div className="flex flex-col justify-between w-full">

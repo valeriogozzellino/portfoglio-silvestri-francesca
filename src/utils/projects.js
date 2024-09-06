@@ -26,7 +26,7 @@ export const projects = [
     type: "local",
     category: "music",
     videoUrl:
-      "https://www.dropbox.com/scl/fi/kv77ldvy3raz98bamlzcj/DEF-PRORES.mov?rlkey=55bhux05mumcq37zaxsm3hmv9&st=qy20aoip&raw=1",
+      "https://www.dropbox.com/scl/fi/kv77ldvy3raz98bamlzcj/DEF-PRORES.mov?rlkey=55bhux05mumcq37zaxsm3hmv9&raw=1",
     url: "/images/MARRAGEDDON.jpg",
     title: "MARRACASH - GUE",
     description: "MARRAGHEDDON (AFTERMOVIE)",
@@ -191,7 +191,7 @@ export const projects = [
     category: "music",
     videoUrl:
       "https://www.dropbox.com/scl/fi/5tmdoqqwda8z1rf8s1b5c/RELEASE_ANNA_V1.mp4?rlkey=ib2aycylfwnzq28rse24fm4c9&st=g333hse5&raw=1",
-    url: "/images/MulacMoschino.png",
+    url: "/images/coverProg/ANNA.jpg",
     title: "ANNA PEPE - RELEASE PARTY",
     description: "ANNA PEPE - RELEASE PARTY",
     detailedDescription: "",
@@ -210,7 +210,7 @@ export const projects = [
 
   {
     id: 19,
-    type: "local",
+    type: "none",
     category: "music",
     videoUrl:
       "https://www.dropbox.com/scl/fi/403d5rg9hihe5wgw95wde/Mulaclogonero1.mp4?rlkey=m4tethaxevnwmpsh30kvu63jp&st=4gfdryxq&raw=1",
@@ -221,7 +221,7 @@ export const projects = [
   },
   {
     id: 20,
-    type: "local",
+    type: "none",
     category: "music",
     videoUrl:
       "https://www.dropbox.com/scl/fi/403d5rg9hihe5wgw95wde/Mulaclogonero1.mp4?rlkey=m4tethaxevnwmpsh30kvu63jp&st=4gfdryxq&raw=1",
@@ -279,10 +279,9 @@ export const projects = [
   },
   {
     id: 25,
-    type: "local",
+    type: "none",
     category: "music",
-    videoUrl:
-      "https://www.dropbox.com/scl/fi/z0k481dwqgfbvu2fq4ty8/MaxeCo_color3-exp_3.mov?rlkey=jv2atjv2vti1r3p5bxpf9m4ah&st=x02b1ao3&raw=1",
+    videoUrl: "",
     url: "/images/coverProg/REDVALLEY.jpg",
     title: "Red Valley Festival ",
     description: "Red Valley Festival (Operatrice Video)",

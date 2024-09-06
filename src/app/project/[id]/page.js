@@ -53,6 +53,7 @@ const Project = ({ params }) => {
             style={{ width: "100vh", height: "70vh" }}
           />
         )}
+        {project.type === "none"}
       </div>
       {/* <div className="mt-6 w-4/5 text-xl md:text-xl lg:text-2xl md:px-[10%] text-white">
         <h5 className="self-center">
@@ -70,12 +71,23 @@ const Project = ({ params }) => {
           <div className="p-2 flex flex-col items-center" key={index}>
             {/* <h2 className="text-center">{video.title}</h2> */}
             <h3 className="text-center">{video.subtitle}</h3>
-            <video
+            {video.isFolder ? (
+              <a href={video.url} target="_blank" rel="noopener noreferrer">
+                Go to Folder
+              </a>
+            ) : (
+              <video controls width="100%" height="auto">
+                <source src={video.url} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            )}
+            {/* <video
               src={video.url}
               controls
+              type="video/mp4"
               preload="auto"
               style={{ width: "40vh", height: "50vh" }}
-            />
+            /> */}
           </div>
         ))}
       </div>
