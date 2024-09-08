@@ -20,7 +20,7 @@ const NavItem = ({ text, to, isImage, imgSrc, imgAlt }) => {
 
 const NavDesktop = () => {
   return (
-    <nav className="hidden md:flex flex-row w-full justify-between fixed bg-black z-10 p-6">
+    <nav className="hidden md:flex flex-row w-full justify-between fixed bg-black z-10 p-6 lg:text-xl">
       <NavItem text="DIRECTED BY FRANCESCA SILVESTRI" to={"/"} />
 
       <div className="flex flex-row gap-4 text-white">
