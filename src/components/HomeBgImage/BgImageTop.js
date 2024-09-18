@@ -29,7 +29,7 @@ const BgImageMobile = () => {
           alt="image top left"
           fill
           sizes="(max-width: 1024px) 100vw, (min-width: 1025px) 50vw"
-          className="object-contain"
+          className="object-contain "
         />
       </div>
       <div
