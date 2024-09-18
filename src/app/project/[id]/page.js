@@ -1,3 +1,4 @@
+"use client";
 import { projects } from "@/utils/projects";
 import { videoProjects } from "@/utils/video_projects";
 import Image from "next/image";
@@ -66,7 +67,7 @@ const Project = ({ params }) => {
           />
         </h5>
       </div> */}
-      <div className="mt-6 mb-5 w-4/5  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center">
+      <div className="mt-6 mb-5 w-4/5  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 justify-center items-center">
         {videosProject.map((video, index) => (
           <div className="p-2 flex flex-col items-center" key={index}>
             {/* <h2 className="text-center">{video.title}</h2> */}

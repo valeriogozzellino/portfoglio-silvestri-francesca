@@ -67,7 +67,7 @@ const Contacts = () => {
           src="/images/contactImg/FS1.JPG"
           width={1000}
           height={1000}
-          className="w-[100%] image-zoom max-w-[500px] mt-12 max-h-[300px] md:min-h-[500px] md:min-w-[600px] rounded-lg self-center"
+          className="w-[100%] image-zoom max-w-[500px] mt-12 max-h-[300px] md:min-h-[500px] md:min-w-[700px] rounded-lg self-center"
         />
         <div className="flex flex-col justify-between w-full">
           <div className="flex flex-col gap-2 text-lg text-end font-medium">

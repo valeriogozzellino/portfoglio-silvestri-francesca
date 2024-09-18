@@ -1,28 +1,16 @@
 export const projects = [
   {
     id: 1,
-    type: "youtube",
+    type: "none",
     category: "music",
-    videoUrl: "https://www.youtube.com/watch?v=-w9hTgFkVG0",
-    url: "/images/anna.png",
-    title: "ANNA PEPE",
-    description: "Vieni dalla baddie - ANNA PEPE (VIDEOCLIP)",
-    detailedDescription:
-      "Questo progetto videomaking per Anna Pepe è stato un'esplorazione visiva del suo singolo 'Vieni dalla baddie'. Abbiamo enfatizzato l'audacia e l'energia della canzone attraverso scelte visive dinamiche e un montaggio rapido che riflette l'essenza del suo stile musicale unico e vibrante. ",
+    videoUrl: "",
+    url: "/images/coverProg/REDVALLEY.JPG",
+    title: "Red Valley Festival ",
+    description: "Red Valley Festival (Operatrice Video)",
+    detailedDescription: "",
   },
   {
     id: 2,
-    type: "youtube",
-    category: "music",
-    videoUrl: "https://www.youtube.com/watch?v=vK9ybpAcPgo",
-    url: "/images/MECNA.jpeg",
-    title: "MECNA",
-    description: "07:34 - MECNA (VIDEOCLIP)",
-    detailedDescription:
-      "Per il videoclip '07:34' di Mecna, abbiamo creato un'atmosfera visiva che accompagna la narrazione emotiva e introspettiva del brano. Il focus è stato sulle tecniche di ripresa che esaltano la liricità e la profondità dei testi di Mecna, utilizzando colori sfumati e illuminazione soffusa per sottolineare il tono riflessivo e personale della canzone. ",
-  },
-  {
-    id: 3,
     type: "local",
     category: "music",
     videoUrl:
@@ -34,7 +22,7 @@ export const projects = [
       "In questo affascinante progetto di videomaking, ho avuto l'opportunità di collaborare con Marracash, una delle icone più influenti della scena rap italiana. Attraverso una narrazione visiva coinvolgente, il video mette in luce la profondità dei testi di Marracash e la sua intensa espressività.",
   },
   {
-    id: 4,
+    id: 3,
     type: "local",
     category: "music",
     videoUrl:
@@ -45,6 +33,18 @@ export const projects = [
     detailedDescription:
       "Questo videoclip promozionale per il merchandising di Mecna unisce la moda alla musica, enfatizzando il legame tra l'identità visiva del brand e l'estetica dell'artista. Il focus visivo sul merchandising è abbinato a un sottofondo musicale che accentua il legame tra l'artista e i suoi fan, usando un montaggio visivo che cattura l'essenza del marchio Mecna attraverso uno stile fresco e giovanile.",
   },
+  {
+    id: 4,
+    type: "local",
+    category: "music",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/5tmdoqqwda8z1rf8s1b5c/RELEASE_ANNA_V1.mp4?rlkey=ib2aycylfwnzq28rse24fm4c9&st=g333hse5&raw=1",
+    url: "/images/coverProg/ANNA.jpg",
+    title: "ANNA PEPE - RELEASE PARTY",
+    description: "ANNA PEPE - RELEASE PARTY",
+    detailedDescription: "",
+  },
+
   {
     id: 5,
     type: "local",
@@ -59,6 +59,39 @@ export const projects = [
   },
   {
     id: 6,
+    type: "youtube",
+    category: "music",
+    videoUrl: "https://www.youtube.com/watch?v=-w9hTgFkVG0",
+    url: "/images/anna.png",
+    title: "ANNA PEPE",
+    description: "Vieni dalla baddie - ANNA PEPE (VIDEOCLIP)",
+    detailedDescription:
+      "Questo progetto videomaking per Anna Pepe è stato un'esplorazione visiva del suo singolo 'Vieni dalla baddie'. Abbiamo enfatizzato l'audacia e l'energia della canzone attraverso scelte visive dinamiche e un montaggio rapido che riflette l'essenza del suo stile musicale unico e vibrante. ",
+  },
+  {
+    id: 7,
+    type: "local",
+    category: "music",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/8gjrflb0y7n0ml5e0gc5o/2_-export.mp4?rlkey=jlr5p0bepamx3lz56sbpk203o&e=1&st=88heixv6&raw=1",
+    url: "/images/coverProg/ELODIE.JPG",
+    title: "Elodie evento Piazza San Babila (MI)",
+    description: "",
+    detailedDescription: "",
+  },
+  {
+    id: 8,
+    type: "local",
+    category: "music",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/y7kg5hfeyr5uwst1gxdyv/EMIS_RECAP.mp4?rlkey=y5kzqnk6uljtbg0cohelwuz7l&st=cjfvyluz&raw=1",
+    url: "/images/coverProg/EMISKILLA.jpg",
+    title: "EMIS KILLA",
+    description: "",
+    detailedDescription: "",
+  },
+  {
+    id: 9,
     type: "local",
     category: "music",
     videoUrl:
@@ -70,7 +103,7 @@ export const projects = [
       "Questo progetto videomaking con Fabri Fibra ha esplorato le complesse sfaccettature del suo essere artista rap di punta in Italia. Attraverso un'intensa narrazione visiva, il video si addentra nelle profonde riflessioni e nella critica sociale che contraddistinguono i testi di Fibra. ",
   },
   {
-    id: 7,
+    id: 10,
     type: "local",
     category: "music",
     videoUrl:
@@ -82,7 +115,7 @@ export const projects = [
       "Recentemente ho avuto il privilegio di lavorare alla realizzazione di un progetto di videomaking dedicato a una delle figure più affascinanti della scena musicale italiana: Madame. Questo progetto ha catturato l'essenza di una performance unica, dove Madame, con il suo inconfondibile carisma, si è posizionata al centro delle attenzioni, incantando il pubblico e la camera con la sua presenza scenica.",
   },
   {
-    id: 8,
+    id: 11,
     type: "local",
     category: "music",
     videoUrl:
@@ -94,7 +127,7 @@ export const projects = [
       "Il progetto videomaking per Marracash è stato un'immersione nel mondo del rap e della sua musica. Attraverso un montaggio dinamico e una narrazione visiva coinvolgente, il video cattura l'essenza del suo stile unico e della sua presenza scenica",
   },
   {
-    id: 9,
+    id: 12,
     type: "local",
     category: "music",
     videoUrl:
@@ -106,7 +139,7 @@ export const projects = [
       "Il progetto videomaking per Fulminacci cattura l'energia e l'emozione del suo concerto. Utilizzando tecniche di ripresa dinamiche e un montaggio incisivo, il video trascina lo spettatore in una performance indimenticabile. Il focus è sulla connessione tra Fulminacci e il suo pubblico, esaltando i momenti di interazione e la potente espressività delle sue canzoni, tutto avvolto in un'atmosfera visiva che amplifica l'esperienza del live.",
   },
   {
-    id: 10,
+    id: 13,
     type: "local",
     category: "music",
     videoUrl:
@@ -118,7 +151,7 @@ export const projects = [
       "il progetto realizzato per Angelina Mango è stato un'immersione nel mondo del TikTok e della sua musica. Attraverso un montaggio dinamico e una narrazione visiva coinvolgente, il video cattura l'essenza del suo stile unico e della sua presenza scenica",
   },
   {
-    id: 11,
+    id: 14,
     type: "local",
     category: "music",
     videoUrl:
@@ -129,7 +162,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 12,
+    id: 15,
     type: "local",
     category: "music",
     videoUrl:
@@ -140,7 +173,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 13,
+    id: 16,
     type: "local",
     category: "music",
     videoUrl:
@@ -151,7 +184,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 14,
+    id: 17,
     type: "local",
     category: "music",
     videoUrl:
@@ -162,7 +195,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 15,
+    id: 18,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -172,40 +205,6 @@ export const projects = [
     description: "Mambo e ANNA PEPE",
     detailedDescription:
       "Nel video 'Mulac Maleducata', abbiamo esplorato un tema più audace e provocatorio, in linea con la campagna omonima di Mulac. Il video combina elementi di moda ed espressione personale, evidenziando come il brand sfida le convenzioni e celebra l'unicità. L'uso di colori intensi e composizioni audaci serve a creare un'atmosfera che è sia ribelle che fashionably chic, rispecchiando l'atteggiamento 'maleducato' che il brand vuole comunicare con questa linea.",
-  },
-
-  {
-    id: 16,
-    type: "local",
-    category: "music",
-    videoUrl:
-      "https://www.dropbox.com/scl/fi/y7kg5hfeyr5uwst1gxdyv/EMIS_RECAP.mp4?rlkey=y5kzqnk6uljtbg0cohelwuz7l&st=cjfvyluz&raw=1",
-    url: "/images/coverProg/EMISKILLA.jpg",
-    title: "EMIS KILLA",
-    description: "",
-    detailedDescription: "",
-  },
-  {
-    id: 17,
-    type: "local",
-    category: "music",
-    videoUrl:
-      "https://www.dropbox.com/scl/fi/5tmdoqqwda8z1rf8s1b5c/RELEASE_ANNA_V1.mp4?rlkey=ib2aycylfwnzq28rse24fm4c9&st=g333hse5&raw=1",
-    url: "/images/coverProg/ANNA.jpg",
-    title: "ANNA PEPE - RELEASE PARTY",
-    description: "ANNA PEPE - RELEASE PARTY",
-    detailedDescription: "",
-  },
-  {
-    id: 18,
-    type: "local",
-    category: "music",
-    videoUrl:
-      "https://www.dropbox.com/scl/fi/8gjrflb0y7n0ml5e0gc5o/2_-export.mp4?rlkey=jlr5p0bepamx3lz56sbpk203o&e=1&st=88heixv6&raw=1",
-    url: "/images/coverProg/ELODIE.JPG",
-    title: "Elodie evento Piazza San Babila (MI)",
-    description: "",
-    detailedDescription: "",
   },
 
   {
@@ -232,6 +231,17 @@ export const projects = [
   },
   {
     id: 21,
+    type: "youtube",
+    category: "music",
+    videoUrl: "https://www.youtube.com/watch?v=vK9ybpAcPgo",
+    url: "/images/MECNA.jpeg",
+    title: "MECNA",
+    description: "07:34 - MECNA (VIDEOCLIP)",
+    detailedDescription:
+      "Per il videoclip '07:34' di Mecna, abbiamo creato un'atmosfera visiva che accompagna la narrazione emotiva e introspettiva del brano. Il focus è stato sulle tecniche di ripresa che esaltano la liricità e la profondità dei testi di Mecna, utilizzando colori sfumati e illuminazione soffusa per sottolineare il tono riflessivo e personale della canzone. ",
+  },
+  {
+    id: 22,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -243,7 +253,7 @@ export const projects = [
       "Questo progetto videomaking presenta una collaborazione tra Mulac e Moschino, due giganti nel mondo della moda. Il video cattura un evento di lancio dove l'innovazione di Mulac incontra l'eleganza audace di Moschino, creando un'esperienza visiva ricca e affascinante. Gli outfit presentati sono esempi squisiti di design contemporaneo, con un'attenzione particolare agli abbinamenti di colori e materiali che riflettono le ultime tendenze. Un'immersione profonda nell'estetica unica che entrambi i marchi portano sul palcoscenico della moda internazionale.",
   },
   {
-    id: 22,
+    id: 23,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -255,7 +265,7 @@ export const projects = [
       "Il video 'Max & Co' è un'ode alla femminilità e all'eleganza, con un tocco di modernità e audacia. Il video cattura l'essenza del marchio, con abiti che esprimono una femminilità forte e indipendente. L'uso di colori tenui e materiali di alta qualità crea un'atmosfera di raffinatezza e stile, mentre le linee pulite e i tagli precisi conferiscono un tocco di modernità e freschezza. Un'ode alla bellezza e alla forza delle donne.",
   },
   {
-    id: 23,
+    id: 24,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -267,7 +277,7 @@ export const projects = [
       "il progetto di videomaking per Moschino e Mulac è stato un'immersione nel mondo della moda e del design. Attraverso un montaggio dinamico e una narrazione visiva coinvolgente, il video cattura l'essenza del loro stile unico e della loro presenza scenica",
   },
   {
-    id: 24,
+    id: 25,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -275,16 +285,6 @@ export const projects = [
     url: "/images/mariasolePollioMax&Co.jpeg",
     title: "MAX&CO MARIASOLE POLLIO",
     description: "MAX&CO MARIASOLE POLLIO",
-    detailedDescription: "",
-  },
-  {
-    id: 25,
-    type: "none",
-    category: "music",
-    videoUrl: "",
-    url: "/images/coverProg/REDVALLEY.JPG",
-    title: "Red Valley Festival ",
-    description: "Red Valley Festival (Operatrice Video)",
     detailedDescription: "",
   },
 ];

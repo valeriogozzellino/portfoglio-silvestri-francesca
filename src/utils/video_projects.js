@@ -57,14 +57,14 @@ export const videoProjects = [
   },
   {
     id: 9,
-    idProject: 8,
+    idProject: 20,
     url: "https://www.dropbox.com/scl/fi/ne2xvm88sxh18zaztzcdn/DUEMIN_VILLAFRANCA.mp4?rlkey=fqlkjie4z6tlmva8uutnthewo&raw=1",
     title: "CALCUTTA SUMMER TOUR",
     subtitle: "VILLAFRANCA",
   },
   {
     id: 10,
-    idProject: 8,
+    idProject: 20,
     url: "https://www.dropbox.com/scl/fi/sl57xls1l0sfhlvxonldy/FROSINONE_VILLAFRANCA.mp4?rlkey=b5y5r7uwkjs2oqtajshqb1uq9&raw=1",
     title: "CALCUTTA SUMMER TOUR",
     subtitle: "VILLAFRANCA",
@@ -106,28 +106,28 @@ export const videoProjects = [
   },
   {
     id: 16,
-    idProject: 25,
+    idProject: 1,
     url: "https://drive.google.com/uc?export=download&id=1aXbyesKiySruWTbS-36mDnLkDIrwpRrv", // Day 1 link
     title: "RED VALLEY",
     subtitle: "DAY 1",
   },
   {
     id: 17,
-    idProject: 25,
+    idProject: 1,
     url: "https://drive.google.com/uc?export=download&id=1Prj7U-ykptnmoL1r7DmgaVcpMLi8AdId", // Day 3 link
     title: "RED VALLEY",
     subtitle: "DAY 3",
   },
   {
     id: 18,
-    idProject: 25,
+    idProject: 1,
     url: "https://drive.google.com/uc?export=download&id=1dD17acnYFSPtcsSZbMWNeBS7ZqgGuRjU", // Day 4 link
     title: "RED VALLEY",
     subtitle: "DAY 4",
   },
   {
     id: 19,
-    idProject: 25,
+    idProject: 1,
     url: "https://www.dropbox.com/scl/fi/kv77ldvy3raz98bamlzcj/DEF-PRORES.mov?rlkey=55bhux05mumcq37zaxsm3hmv9&raw=1", // Dropbox video link
     title: "Special Project",
     subtitle: "DEF-PRORES",
@@ -141,20 +141,20 @@ export const videoProjects = [
   },
   {
     id: 21,
-    idProject: 9,
+    idProject: 12,
     url: "/images/fulminacci2.png",
     alt: "Fulminacci",
   },
   {
     id: 22,
-    idProject: 9,
+    idProject: 12,
     url: "/images/fulminacci3.png",
     title: "",
     subtitle: "",
   },
   {
     id: 23,
-    idProject: 9,
+    idProject: 12,
     url: "/images/fulminacci4.png",
     title: "",
     subtitle: "",
