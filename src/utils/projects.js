@@ -282,7 +282,7 @@ export const projects = [
     type: "none",
     category: "music",
     videoUrl: "",
-    url: "/images/coverProg/REDVALLEY.jpg",
+    url: "/images/coverProg/REDVALLEY.JPG",
     title: "Red Valley Festival ",
     description: "Red Valley Festival (Operatrice Video)",
     detailedDescription: "",
