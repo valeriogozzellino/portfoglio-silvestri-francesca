@@ -17,7 +17,7 @@ export default function Home() {
     <div className="flex flex-col justify-center w-full gap-16">
       {showIntro && <ScreenSaver />}
 
-      <div className="relative mt-11 h-[100vh] md:h-[90vh]">
+      <div className="relative mt-11 h-[60vh] md:h-[90vh]">
         <div className="flex flex-col justify-center items-center h-full text-4xl md:text-6xl lg:text-8xl ">
           <Image
             src="/images/loghi/LOGO.png"

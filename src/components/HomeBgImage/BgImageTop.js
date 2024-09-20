@@ -19,7 +19,7 @@ const BgImageMobile = () => {
   }, []);
 
   return (
-    <div className="absolute w-full h-[100vh] inset-0 -z-[1]">
+    <div className="absolute w-full h-[70vh] md:h-[150vh] inset-0 -z-[1]">
       <div
         id="imgTopLeft"
         className=" flex items-center justify-center w-4/5 h-full ">
