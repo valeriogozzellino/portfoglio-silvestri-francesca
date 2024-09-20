@@ -123,14 +123,14 @@ export const videoProjects = [
     idProject: 1,
     url: "https://www.dropbox.com/scl/fi/gqhg4t4a9uqryrxzq8an5/REEL-DAY-3-16_9.mp4?rlkey=vr8i2bcpef3hc4npl7gxm35sg&st=k0jkjkzo&raw=1", // Day 4 link
     title: "RED VALLEY",
-    subtitle: "DAY 4",
+    subtitle: "DAY 3",
   },
   {
     id: 19,
     idProject: 1,
-    url: "https://www.dropbox.com/scl/fi/kv77ldvy3raz98bamlzcj/DEF-PRORES.mov?rlkey=55bhux05mumcq37zaxsm3hmv9&raw=1", // Dropbox video link
+    url: "https://www.dropbox.com/scl/fi/tf68elgyaozpuk0qq83ff/REEL-DAY-3-orrizz.mp4?rlkey=6ekwqbofhcep7m6nu17tjkao7&st=qvb1whz0&raw=1", // Dropbox video link
     title: "Special Project",
-    subtitle: "DEF-PRORES",
+    subtitle: "DAY 4",
   },
   {
     id: 20,
