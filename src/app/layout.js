@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <NavDesktop />
 
         <CustomCursor />
-        <main className="w-full h-full px-10">{children}</main>
+        <main className="w-full h-full px-3 md:px-10">{children}</main>
       </body>
     </html>
   );

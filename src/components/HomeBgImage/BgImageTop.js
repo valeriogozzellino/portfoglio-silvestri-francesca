@@ -22,7 +22,7 @@ const BgImageMobile = () => {
     <div className="absolute w-full h-[70vh] md:h-[150vh] inset-0 -z-[1]">
       <div
         id="imgTopLeft"
-        className=" flex items-center justify-center w-4/5 h-full ">
+        className=" flex items-center justify-center w-full h-full ">
         <Image
           src="/images/coverHome/IMG_4638.jpg"
           alt="image top left"
