@@ -107,21 +107,21 @@ export const videoProjects = [
   {
     id: 16,
     idProject: 1,
-    url: "https://drive.google.com/uc?export=download&id=1aXbyesKiySruWTbS-36mDnLkDIrwpRrv", // Day 1 link
+    url: "https://www.dropbox.com/scl/fi/8isux09v6qzf07kiv140x/RVF24-DAY-1_16.9_Clean.mp4?rlkey=ctpywjtyzyfysvagzxxrsvew7&st=gmv1rf93&raw=1", // Day 1 link
     title: "RED VALLEY",
     subtitle: "DAY 1",
   },
   {
     id: 17,
     idProject: 1,
-    url: "https://drive.google.com/uc?export=download&id=1Prj7U-ykptnmoL1r7DmgaVcpMLi8AdId", // Day 3 link
+    url: "https://www.dropbox.com/scl/fi/o84dupkczesx71f9al68p/RVF24-DAY-2_16.9_Clean.mp4?rlkey=5ipbjroxs92lmsfzudz5keszh&st=vqelz1uo&raw=1", // Day 3 link
     title: "RED VALLEY",
-    subtitle: "DAY 3",
+    subtitle: "DAY 2",
   },
   {
     id: 18,
     idProject: 1,
-    url: "https://drive.google.com/uc?export=download&id=1dD17acnYFSPtcsSZbMWNeBS7ZqgGuRjU", // Day 4 link
+    url: "https://www.dropbox.com/scl/fi/gqhg4t4a9uqryrxzq8an5/REEL-DAY-3-16_9.mp4?rlkey=vr8i2bcpef3hc4npl7gxm35sg&st=k0jkjkzo&raw=1", // Day 4 link
     title: "RED VALLEY",
     subtitle: "DAY 4",
   },
