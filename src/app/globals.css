@@ -207,3 +207,13 @@ body {
 .animate-float-up {
   animation: floatUp 20s ease-in-out infinite;
 }
+
+/* background immaggine home*/
+.bg-image {
+  background-image: url("/public/images/coverHome/IMG_4638.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}

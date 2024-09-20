@@ -22,6 +22,16 @@ const BgImageMobile = () => {
     <div className="absolute w-full h-[100vh] inset-0 -z-[1]">
       <div
         id="imgTopLeft"
+        className=" flex items-center justify-center w-4/5 h-full ">
+        <Image
+          src="/images/coverHome/IMG_4638.jpg"
+          alt="image top left"
+          fill
+          sizes="(max-width: 1024px) 100vw, (min-width: 1025px) 50vw"
+        />
+      </div>
+      {/* <div
+        id="imgTopLeft"
         className="absolute top-0 left-0 flex items-center justify-center w-[30vw] h-[30vh] sm:w-[25vw] sm:h-[25vh] md:w-[35vw] md:h-[35vh] lg:w-[40vw] lg:h-[40vh] xl:w-[45vw] xl:h-[45vh]"
         style={{ transform: `translateY(${scrollPosition * 0.2}px)` }}>
         <Image
@@ -31,8 +41,8 @@ const BgImageMobile = () => {
           sizes="(max-width: 1024px) 100vw, (min-width: 1025px) 50vw"
           className="object-contain "
         />
-      </div>
-      <div
+      </div> */}
+      {/* <div
         id="imgTopRight"
         className="absolute top-0 right-0 flex items-center justify-center w-[30vw] h-[30vh] sm:w-[25vw] sm:h-[25vh] md:w-[35vw] md:h-[35vh] lg:w-[40vw] lg:h-[40vh] xl:w-[45vw] xl:h-[45vh]"
         style={{ transform: `translateY(${scrollPosition * 0.2}px)` }}>
@@ -83,7 +93,7 @@ const BgImageMobile = () => {
           sizes="(max-width: 1024px) 100vw, (min-width: 1025px) 50vw"
           className="object-contain"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
