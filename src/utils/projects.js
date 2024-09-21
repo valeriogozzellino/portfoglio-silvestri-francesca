@@ -13,8 +13,7 @@ export const projects = [
     id: 2,
     type: "local",
     category: "music",
-    videoUrl:
-      "https://www.dropbox.com/scl/fi/kv77ldvy3raz98bamlzcj/DEF-PRORES.mov?rlkey=55bhux05mumcq37zaxsm3hmv9&e=1&st=h2fbsddt&raw=1",
+    videoUrl: "/videos/DEFPRORES.mov",
     url: "/images/MARRAGEDDON.jpg",
     title: "MARRACASH - GUE",
     description: "MARRAGHEDDON (AFTERMOVIE)",

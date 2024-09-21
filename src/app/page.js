@@ -17,14 +17,14 @@ export default function Home() {
     <div className="flex flex-col justify-center w-full md:gap-16">
       {showIntro && <ScreenSaver />}
 
-      <div className="relative mt-11 h-[50vh] md:h-[90vh]">
-        <div className="flex flex-col justify-center items-center h-full text-4xl md:text-6xl lg:text-8xl ">
+      <div className="relative mt-11 h-[50vh] md:h-[80vh]">
+        <div className="flex flex-col justify-end items-center h-full text-4xl md:text-6xl lg:text-8xl">
           <Image
             src="/images/loghi/LOGO.png"
             alt="first image"
-            className="h-auto w-auto md:w-auto md:h-56 lg:w-[80vh] lg:h-[40vh]"
-            width={700}
-            height={700}
+            className="h-16 w-auto md:w-auto md:h-16 lg:w-[40vh] lg:h-[20vh]"
+            width={350}
+            height={350}
           />
         </div>
 
