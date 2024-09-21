@@ -18,13 +18,13 @@ export default function Home() {
       {showIntro && <ScreenSaver />}
 
       <div className="relative mt-11 h-[50vh] md:h-[80vh]">
-        <div className="flex flex-col justify-end items-center h-full text-4xl md:text-6xl lg:text-8xl">
+        <div className="flex flex-col justify-end items-center h-full md:h-[90vh] text-4xl md:text-6xl lg:text-8xl">
           <Image
             src="/images/loghi/LOGO.png"
             alt="first image"
-            className="h-16 w-auto md:w-auto md:h-16 lg:w-[40vh] lg:h-[20vh]"
-            width={350}
-            height={350}
+            className="h-16 w-auto md:w-auto md:h-14 lg:w-[35vh] lg:h-[15vh]"
+            width={300}
+            height={300}
           />
         </div>
 
