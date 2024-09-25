@@ -157,9 +157,9 @@ body {
   }
 }
 
-.image-zoom {
+/* .image-zoom {
   animation: zoomInOut 8s ease-in-out infinite;
-}
+} */
 
 .image-first {
   animation: bottomToTop 4s ease-in-out infinite;

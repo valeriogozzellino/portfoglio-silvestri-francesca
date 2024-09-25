@@ -148,7 +148,7 @@ const Contacts = () => {
           </h1>
         </div>
         {success && (
-          <div className="absolute top-0 left-0 right-0 bg-green-500 text-white text-center p-4 rounded-b-lg">
+          <div className="absolute z-10 top-0 left-0 right-0 bg-green-500 text-white text-center p-4 rounded-b-lg">
             Email inviata con successo!
           </div>
         )}
