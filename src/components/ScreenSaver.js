@@ -10,10 +10,12 @@ const ScreenSaver = () => {
       initial={{ y: 0 }}
       animate={{ y: "-100%" }}
       transition={{ duration: 1, ease: "easeInOut", delay: 1 }}>
-      <img
+      <Image
         src="/images/loghi/LOGO.png"
         alt="first image"
-        className="h-60 image-first w-fit"
+        width={600}
+        height={600}
+        className="image-first"
       />
     </motion.div>
   );
