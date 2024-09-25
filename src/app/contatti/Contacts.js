@@ -27,16 +27,15 @@ const Contacts = () => {
       from_name: formData.nome,
       from_email: formData.email,
       message: formData.contenuto,
-      to_email: "fsilvestrivideo@gmail.com",
-      subject: "richiesta contatti sito",
+      subject: "Richiesta CONTATTI SITO",
     };
 
     emailjs
       .send(
-        "service_i7vu515",
-        "template_jc38hsi",
+        "service_kolv8jq",
+        "template_8m6p0ia",
         templateParams,
-        "mcJ4_qCEU_GK0iRCt"
+        "EN1MFCGJQ86nK6IcF"
       )
       .then(
         (result) => {
@@ -59,9 +58,9 @@ const Contacts = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen mt-20 text-white">
-      <LoadingOverlay isLoading={isLoading} />
+    <div className="flex flex-col min-h-screen mt-32 text-white">
       <div className="flex md:flex-row flex-col md:justify-between gap-6 pb-24 flex-grow">
+        <LoadingOverlay isLoading={isLoading} />
         <Image
           alt=""
           src="/images/contactImg/FS1.JPG"
