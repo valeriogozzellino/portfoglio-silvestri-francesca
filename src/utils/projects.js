@@ -11,6 +11,17 @@ export const projects = [
   },
   {
     id: 2,
+    type: "none",
+    category: "music",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/badqbrjn3naiym0a3tmth/RM-Roma-V02color.mp4?rlkey=0xciuab4v9e6349emwf6zfrzu&st=pvq8ycwp&raw=1",
+    url: "/images/coverProg/LAURO.jpg",
+    title: "TOUR ACHILLE LAURO 2024 ",
+    description: "MILANO - ROMA (Operatrice Video)",
+    detailedDescription: "",
+  },
+  {
+    id: 3,
     type: "local",
     category: "music",
     videoUrl:
@@ -22,7 +33,7 @@ export const projects = [
       "In questo affascinante progetto di videomaking, ho avuto l'opportunità di collaborare con Marracash, una delle icone più influenti della scena rap italiana. Attraverso una narrazione visiva coinvolgente, il video mette in luce la profondità dei testi di Marracash e la sua intensa espressività.",
   },
   {
-    id: 3,
+    id: 4,
     type: "local",
     category: "music",
     videoUrl:
@@ -34,7 +45,7 @@ export const projects = [
       "Questo videoclip promozionale per il merchandising di Mecna unisce la moda alla musica, enfatizzando il legame tra l'identità visiva del brand e l'estetica dell'artista. Il focus visivo sul merchandising è abbinato a un sottofondo musicale che accentua il legame tra l'artista e i suoi fan, usando un montaggio visivo che cattura l'essenza del marchio Mecna attraverso uno stile fresco e giovanile.",
   },
   {
-    id: 4,
+    id: 5,
     type: "local",
     category: "music",
     videoUrl:
@@ -46,7 +57,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     type: "local",
     category: "music",
     videoUrl:
@@ -58,7 +69,7 @@ export const projects = [
       "Collaborare con i Pinguini Tattici Nucleari in questo progetto di videomaking è stata un'esperienza straordinariamente vivace e colorata. Il gruppo, noto per il suo stile unico e le esibizioni energiche, ha portato una ventata di freschezza e originalità sul set. ",
   },
   {
-    id: 6,
+    id: 7,
     type: "youtube",
     category: "music",
     videoUrl: "https://www.youtube.com/watch?v=-w9hTgFkVG0",
@@ -69,7 +80,7 @@ export const projects = [
       "Questo progetto videomaking per Anna Pepe è stato un'esplorazione visiva del suo singolo 'Vieni dalla baddie'. Abbiamo enfatizzato l'audacia e l'energia della canzone attraverso scelte visive dinamiche e un montaggio rapido che riflette l'essenza del suo stile musicale unico e vibrante. ",
   },
   {
-    id: 7,
+    id: 8,
     type: "local",
     category: "music",
     videoUrl:
@@ -80,7 +91,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 8,
+    id: 9,
     type: "local",
     category: "music",
     videoUrl:
@@ -91,7 +102,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 9,
+    id: 10,
     type: "local",
     category: "music",
     videoUrl:
@@ -103,7 +114,7 @@ export const projects = [
       "Questo progetto videomaking con Fabri Fibra ha esplorato le complesse sfaccettature del suo essere artista rap di punta in Italia. Attraverso un'intensa narrazione visiva, il video si addentra nelle profonde riflessioni e nella critica sociale che contraddistinguono i testi di Fibra. ",
   },
   {
-    id: 10,
+    id: 11,
     type: "local",
     category: "music",
     videoUrl:
@@ -115,7 +126,7 @@ export const projects = [
       "Recentemente ho avuto il privilegio di lavorare alla realizzazione di un progetto di videomaking dedicato a una delle figure più affascinanti della scena musicale italiana: Madame. Questo progetto ha catturato l'essenza di una performance unica, dove Madame, con il suo inconfondibile carisma, si è posizionata al centro delle attenzioni, incantando il pubblico e la camera con la sua presenza scenica.",
   },
   {
-    id: 11,
+    id: 12,
     type: "local",
     category: "music",
     videoUrl:
@@ -127,7 +138,7 @@ export const projects = [
       "Il progetto videomaking per Marracash è stato un'immersione nel mondo del rap e della sua musica. Attraverso un montaggio dinamico e una narrazione visiva coinvolgente, il video cattura l'essenza del suo stile unico e della sua presenza scenica",
   },
   {
-    id: 12,
+    id: 13,
     type: "local",
     category: "music",
     videoUrl:
@@ -139,7 +150,7 @@ export const projects = [
       "Il progetto videomaking per Fulminacci cattura l'energia e l'emozione del suo concerto. Utilizzando tecniche di ripresa dinamiche e un montaggio incisivo, il video trascina lo spettatore in una performance indimenticabile. Il focus è sulla connessione tra Fulminacci e il suo pubblico, esaltando i momenti di interazione e la potente espressività delle sue canzoni, tutto avvolto in un'atmosfera visiva che amplifica l'esperienza del live.",
   },
   {
-    id: 13,
+    id: 14,
     type: "local",
     category: "music",
     videoUrl:
@@ -151,7 +162,7 @@ export const projects = [
       "il progetto realizzato per Angelina Mango è stato un'immersione nel mondo del TikTok e della sua musica. Attraverso un montaggio dinamico e una narrazione visiva coinvolgente, il video cattura l'essenza del suo stile unico e della sua presenza scenica",
   },
   {
-    id: 14,
+    id: 15,
     type: "local",
     category: "music",
     videoUrl:
@@ -162,7 +173,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 15,
+    id: 16,
     type: "local",
     category: "music",
     videoUrl:
@@ -173,7 +184,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 16,
+    id: 17,
     type: "local",
     category: "music",
     videoUrl:
@@ -184,7 +195,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 17,
+    id: 18,
     type: "local",
     category: "music",
     videoUrl:
@@ -195,7 +206,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 18,
+    id: 19,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -208,7 +219,7 @@ export const projects = [
   },
 
   {
-    id: 19,
+    id: 20,
     type: "none",
     category: "music",
     videoUrl:
@@ -219,7 +230,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 20,
+    id: 21,
     type: "none",
     category: "music",
     videoUrl:
@@ -230,7 +241,7 @@ export const projects = [
     detailedDescription: "",
   },
   {
-    id: 21,
+    id: 22,
     type: "youtube",
     category: "music",
     videoUrl: "https://www.youtube.com/watch?v=vK9ybpAcPgo",
@@ -241,7 +252,7 @@ export const projects = [
       "Per il videoclip '07:34' di Mecna, abbiamo creato un'atmosfera visiva che accompagna la narrazione emotiva e introspettiva del brano. Il focus è stato sulle tecniche di ripresa che esaltano la liricità e la profondità dei testi di Mecna, utilizzando colori sfumati e illuminazione soffusa per sottolineare il tono riflessivo e personale della canzone. ",
   },
   {
-    id: 22,
+    id: 23,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -253,19 +264,18 @@ export const projects = [
       "Questo progetto videomaking presenta una collaborazione tra Mulac e Moschino, due giganti nel mondo della moda. Il video cattura un evento di lancio dove l'innovazione di Mulac incontra l'eleganza audace di Moschino, creando un'esperienza visiva ricca e affascinante. Gli outfit presentati sono esempi squisiti di design contemporaneo, con un'attenzione particolare agli abbinamenti di colori e materiali che riflettono le ultime tendenze. Un'immersione profonda nell'estetica unica che entrambi i marchi portano sul palcoscenico della moda internazionale.",
   },
   {
-    id: 23,
+    id: 24,
     type: "local",
     category: "fashion",
     videoUrl:
-      "https://www.dropbox.com/scl/fi/z0k481dwqgfbvu2fq4ty8/MaxeCo_color3-exp_3.mov?rlkey=jv2atjv2vti1r3p5bxpf9m4ah&st=x02b1ao3&raw=1",
-    url: "/images/MULAC.png",
-    title: "Max & CO",
-    description: "MAX & CO",
-    detailedDescription:
-      "Il video 'Max & Co' è un'ode alla femminilità e all'eleganza, con un tocco di modernità e audacia. Il video cattura l'essenza del marchio, con abiti che esprimono una femminilità forte e indipendente. L'uso di colori tenui e materiali di alta qualità crea un'atmosfera di raffinatezza e stile, mentre le linee pulite e i tagli precisi conferiscono un tocco di modernità e freschezza. Un'ode alla bellezza e alla forza delle donne.",
+      "https://www.dropbox.com/scl/fi/eq0my9zskfxo8emmvxmzj/Maybelline_exp8.mp4?rlkey=zkbxiqf0azupukxiiyzjqwudu&st=foioptcr&raw=1",
+    url: "/images/coverProg/MAYBELLINE.jpg",
+    title: "MAYBELLINE x MARIASOLE POLLIO",
+    description: "MAYBELLINE x MARIASOLE POLLIO",
+    detailedDescription: "",
   },
   {
-    id: 24,
+    id: 25,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -277,7 +287,7 @@ export const projects = [
       "il progetto di videomaking per Moschino e Mulac è stato un'immersione nel mondo della moda e del design. Attraverso un montaggio dinamico e una narrazione visiva coinvolgente, il video cattura l'essenza del loro stile unico e della loro presenza scenica",
   },
   {
-    id: 25,
+    id: 26,
     type: "local",
     category: "fashion",
     videoUrl:
@@ -285,6 +295,17 @@ export const projects = [
     url: "/images/mariasolePollioMax&Co.jpeg",
     title: "MAX&CO MARIASOLE POLLIO",
     description: "MAX&CO MARIASOLE POLLIO",
+    detailedDescription: "",
+  },
+  {
+    id: 27,
+    type: "local",
+    category: "fashion",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/4rn41i2nvt3zof9uiq44v/PINALLI_ORIZ_V2.mp4?rlkey=qrtlx7ab4631yfocyabeyw89f&st=14jdnduq&raw=1",
+    url: "/images/coverProg/PINALLI.png",
+    title: "PINALLI",
+    description: "PINALLI",
     detailedDescription: "",
   },
 ];
