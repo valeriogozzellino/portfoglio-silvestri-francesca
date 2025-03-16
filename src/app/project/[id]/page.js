@@ -56,17 +56,6 @@ const Project = ({ params }) => {
         )}
         {project.type === "none"}
       </div>
-      {/* <div className="mt-6 w-4/5 text-xl md:text-xl lg:text-2xl md:px-[10%] text-white">
-        <h5 className="self-center">
-          <TextGenerateEffect
-            words={project.detailedDescription}
-            duration={1.5}
-            startDelay={1.5}
-            staggerDuration={0}
-            className="text-center mb-6"
-          />
-        </h5>
-      </div> */}
       <div className="mt-6 mb-5 w-4/5  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 justify-center items-center">
         {videosProject.map((video, index) => (
           <div className="p-2 flex flex-col items-center" key={index}>
@@ -77,18 +66,13 @@ const Project = ({ params }) => {
                 Go to Folder
               </a>
             ) : (
-              <video controls width="100%" height="auto">
-                <source src={video.url} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <Image 
+                    src={video.url}
+                    alt={video.title}
+                    width={500}
+                    height={400}
+            />
             )}
-            {/* <video
-              src={video.url}
-              controls
-              type="video/mp4"
-              preload="auto"
-              style={{ width: "40vh", height: "50vh" }}
-            /> */}
           </div>
         ))}
       </div>

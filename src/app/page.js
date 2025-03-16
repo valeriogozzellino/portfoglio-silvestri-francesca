@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -11,8 +11,9 @@ import BgImageMobile from "@/components/HomeBgImage/BgImageMobile";
 import Image from "next/image";
 
 export default function Home() {
-  const [showIntro, setShowIntro] = useState(true);
 
+  const [showIntro, setShowIntro] = useState(true);
+    
   return (
     <div className="flex flex-col justify-center w-full md:gap-16">
       {showIntro && <ScreenSaver />}
@@ -31,9 +32,6 @@ export default function Home() {
         <div className="block">
           <BgImageTop />
         </div>
-        {/* <div className="block md:hidden">
-          <BgImageMobile />
-        </div>  */}
       </div>
 
       <div className="w-full mt-12 text-3xl md:text-4xl lg:text-8xl md:px-[10%]">

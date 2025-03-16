@@ -95,7 +95,10 @@ const Footer = () => {
             Valerio Gozzellino -{" "}
           </a>
           <a href="https://www.linkedin.com/in/gabrielemasciulli/">
-            Gabriele Masciulli
+            Gabriele Masciulli -{" "}
+          </a>
+          <a href="https://www.linkedin.com/in/mattia-pavone-804b1a1b8/">
+            Mattia Pavone
           </a>
         </p>
       </div>
