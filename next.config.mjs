@@ -8,6 +8,7 @@ const nextConfig = {
       'cdn.myportfolio.com',
       'www.youtube.com',
       'img.youtube.com',
+      'www.dropbox.com'
     ],
   },
 }

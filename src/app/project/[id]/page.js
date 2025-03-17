@@ -72,7 +72,7 @@ const Project = ({ params }) => {
                     width={500}
                     height={400}
             />
-            )}
+            )}  
           </div>
         ))}
       </div>
