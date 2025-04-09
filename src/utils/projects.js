@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    type: "none",
+    type: "imageCollection",
     category: "music",
     videoUrl: "",
     url: "/images/coverProg/ANNA2.jpg",
@@ -13,7 +13,8 @@ export const projects = [
     id: 2,
     type: "local",
     category: "music",
-    videoUrl: "https://www.dropbox.com/scl/fi/i6tzepoha55xgstujn0mg/MECNA-PASSIONE_COP.mp4?rlkey=08fei87jmo6fkuj42yimxgwk8&st=1ilcsuf0&raw=1",
+    videoUrl:
+      "https://www.dropbox.com/scl/fi/i6tzepoha55xgstujn0mg/MECNA-PASSIONE_COP.mp4?rlkey=08fei87jmo6fkuj42yimxgwk8&st=1ilcsuf0&raw=1",
     url: "/images/coverProg/MECNAPASSIONE.jpg",
     title: "PASSIONE - MECNA",
     description: "Diretto da Francesca Silvestri",
@@ -21,7 +22,7 @@ export const projects = [
   },
   {
     id: 3,
-    type: "none",
+    type: "videoCollection",
     category: "music",
     videoUrl: "",
     url: "/images/coverProg/REDVALLEY.jpg",
@@ -49,7 +50,7 @@ export const projects = [
     url: "/images/MARRAGEDDON.jpg",
     title: "MARRACASH - GUE",
     description: "MARRAGHEDDON (AFTERMOVIE)",
-    detailedDescription:"",
+    detailedDescription: "",
   },
   {
     id: 6,
@@ -60,7 +61,7 @@ export const projects = [
     url: "/images/merchMecna.png",
     title: "MERCHANDISING",
     description: "MECNA - MERCH ",
-    detailedDescription:"",
+    detailedDescription: "",
   },
   {
     id: 7,
@@ -83,7 +84,7 @@ export const projects = [
     url: "/images/PINGUINI.jpeg",
     title: "PINGUINI",
     description: "PINGUINI TATTICI NUCLEARI (AFTERMOVIE)",
-    detailedDescription:"",
+    detailedDescription: "",
   },
   {
     id: 9,

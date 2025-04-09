@@ -54,25 +54,22 @@ const Project = ({ params }) => {
             style={{ width: "100vh", height: "70vh" }}
           />
         )}
-        {project.type === "none"}
+        {project.type === "imageCollection" ||
+          project.type === "videoCollection"}
       </div>
       <div className="mt-6 mb-5 w-4/5  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 justify-center items-center">
-        {videosProject.map((video, index) => (
+        {videosProject.map((item, index) => (
           <div className="p-2 flex flex-col items-center" key={index}>
-            {/* <h2 className="text-center">{video.title}</h2> */}
-            <h3 className="text-center">{video.subtitle}</h3>
-            {video.isFolder ? (
-              <a href={video.url} target="_blank" rel="noopener noreferrer">
-                Go to Folder
-              </a>
+            {project.type == "videoCollection" ? (
+              <video
+                src={item.url}
+                controls
+                preload="auto"
+                style={{ width: "100vh", height: "70vh" }}
+              />
             ) : (
-              <Image 
-                    src={video.url}
-                    alt={video.title}
-                    width={500}
-                    height={400}
-            />
-            )}  
+              <Image src={item.url} alt={item.title} width={500} height={400} />
+            )}
           </div>
         ))}
       </div>
