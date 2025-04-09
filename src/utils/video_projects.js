@@ -177,7 +177,7 @@ export const videoProjects = [
   {
     id: 26,
     idProject: 1,
-    url: "/images/annaPepe2'evento/annaImg1.jpg",
+    url: "/images/annaPepe2evento/annaimg1.jpg",
     title: "ANNA - STILLS",
     subtitle: "Photo 1",
   },
@@ -185,7 +185,7 @@ export const videoProjects = [
   {
     id: 27,
     idProject: 1,
-    url: "/images/annaPepe2'evento/annaImg2.jpg",
+    url: "/images/annaPepe2evento/annaimg2.jpg",
     title: "ANNA - STILLS",
     subtitle: "Photo 2",
   },
@@ -193,7 +193,7 @@ export const videoProjects = [
   {
     id: 28,
     idProject: 1,
-    url: "/images/annaPepe2'evento/annaImg3.jpg",
+    url: "/images/annaPepe2evento/annaimg3.jpg",
     title: "ANNA - STILLS",
     subtitle: "Photo 3",
   },
@@ -201,7 +201,7 @@ export const videoProjects = [
   {
     id: 29,
     idProject: 1,
-    url: "/images/annaPepe2'evento/annaImg4.jpg",
+    url: "/images/annaPepe2evento/annaimg4.jpg",
     title: "ANNA - STILLS",
     subtitle: "Photo 4",
   },
@@ -209,7 +209,7 @@ export const videoProjects = [
   {
     id: 30,
     idProject: 1,
-    url: "/images/annaPepe2'evento/annaImg5.jpg",
+    url: "/images/annaPepe2evento/annaimg5.jpg",
     title: "ANNA - STILLS",
     subtitle: "Photo 5",
   },
@@ -217,7 +217,7 @@ export const videoProjects = [
   {
     id: 31,
     idProject: 1,
-    url: "/images/annaPepe2'evento/annaImg6.jpg",
+    url: "/images/annaPepe2evento/annaimg6.jpg",
     title: "ANNA - STILLS",
     subtitle: "Photo 6",
   },
@@ -225,7 +225,7 @@ export const videoProjects = [
   {
     id: 32,
     idProject: 1,
-    url: "/images/annaPepe2'evento/annaImg7.jpg",
+    url: "/images/annaPepe2evento/annaimg7.jpg",
     title: "ANNA - STILLS",
     subtitle: "Photo 7",
   },
@@ -233,7 +233,7 @@ export const videoProjects = [
   {
     id: 33,
     idProject: 1,
-    url: "/images/annaPepe2'evento/annaImg8.jpg",
+    url: "/images/annaPepe2evento/annaimg8.jpg",
     title: "ANNA - STILLS",
     subtitle: "Photo 8",
   },
@@ -241,7 +241,7 @@ export const videoProjects = [
   {
     id: 34,
     idProject: 1,
-    url: "/images/annaPepe2'evento/annaImg9.jpg",
+    url: "/images/annaPepe2evento/annaimg9.jpg",
     title: "ANNA - STILLS",
     subtitle: "Photo 9",
   },
@@ -249,7 +249,7 @@ export const videoProjects = [
   {
     id: 35,
     idProject: 1,
-    url: "/images/annaPepe2'evento/annaImg10.jpg",
+    url: "/images/annaPepe2evento/annaimg10.jpg",
     title: "ANNA - STILLS",
     subtitle: "Photo 10",
   },
@@ -257,9 +257,8 @@ export const videoProjects = [
   {
     id: 36,
     idProject: 1,
-    url: "/images/annaPepe2'evento/annaImg11.jpg",
+    url: "/images/annaPepe2evento/annaimg11.jpg",
     title: "ANNA - STILLS",
     subtitle: "Photo 11",
   },
-
 ];
